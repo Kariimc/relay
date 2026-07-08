@@ -1,5 +1,14 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-06 from claude.ai chat. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context.
+Updated: 2026-07-08 from code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+
+## LATEST -- where we left off (2026-07-08)
+The Fable-5 extraction deadline has passed. The standing mission is now **sell the workshop, don't keep building it**: ship a first paying customer for neon-forge-ui (a paid dark-mode React component library, $39 launch), then productized Claude-Code control-plane setups ($99-199). 12-month target $50k. Advisor plan v1 with real numbers: `~/.claude/advisor/goals.md`. The full ranked plan + a live STATUS-tracked queue is `xavier-agentic-os/data/roadmap-2026-07-consultant-audit.md`, mirrored into that repo's `PROGRESS.md` "Business queue".
+
+Done this session (all verified): Higgsfield token rotated + verified live; the brain, `~/.claude`, and XAVIER `data/` are backed up off-machine (private `Kariimc/brain` repo + a thumbdrive labeled `XAVIER-BAK`, hourly auto-backup task + Desktop launcher); XAVIER loaded with the real flagship workload (`data/projects/flagship.json` + a human-gated inbox); and the 9PM `evening-debrief` was hardened (detached-HEAD guard + a shared git lock + honest success/failure logging + UTF-8 logs).
+
+Only-Kariim next steps (nothing agent-actionable is open): run "advisor, interview me"; then review and send the offer one-pager (`xavier-agentic-os/data/offer-neon-forge.md`) to 10 people.
+
+Corrections to the older notes below: the second brain is `C:\Users\Kariim\Dev\brain` (NOT `C:\Dev\brain`) and now HAS a git remote + backup; the Relay is already built (this repo); in `xavier-agentic-os` every git WRITE goes through `scripts\git-lock.ps1` (see that repo's CLAUDE.md "Named Mistakes" #16 -- two sessions writing git at once left the repo tangled once). Authoritative per-repo handoffs: xavier-agentic-os -> `PROGRESS.md`; brain -> `wiki/user-primer.md`.
 
 ## 1. Who you're working for and how
 Riimos (GitHub: Kariimc), solo developer. Communicates by voice-to-text — silently fix speech artifacts ("table five" = "Fable 5"). Rules of engagement: answer first, zero preamble; plain everyday language, every technical term explained in the same breath; act by default, stop only for credentials, genuinely unclear intent, or design/project-breaking risk; every deliverable is ONE copy-paste artifact, never a checklist; do all legwork yourself — the only hard wall is writing to his local machine or pushing to his GitHub (name it in one line); "done" means 100% working, zero bugs; never bring up other projects unprompted; all Kariimc repos are public — fetch them directly, never ask for paths or screenshots.
