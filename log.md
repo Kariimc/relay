@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-09 code-local: Flow State icon polish shipped; pushed 2fb2649 (polished Desktop/tray artwork) and de4e596 (centered overlay mic badge).
 2026-07-09 code-local: Flow State rename/roadmap shipped; pushed Kariimc/Flow-State fd854a7, repaired Desktop shortcut, verified compile + 13 tests + Hub smoke.
 2026-07-09 | code-local | Finished Claude Eyes Desktop launcher with revised all-seeing-eye icon: smaller eye at pyramid peak; shortcut target and icon verified.
 2026-07-09 | code-local | Moved temporary Desktop backup evacuation folder back to thumbdrive: `C:\Users\Kariim\Desktop\backup` -> `E:\backup`; verified 239 files / 1,807,658 bytes and Desktop source removed. Drive may need `XAVIER-BAK` label restored for the automated backup script.
