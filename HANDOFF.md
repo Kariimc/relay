@@ -6,6 +6,8 @@ Updated: 2026-07-09 from code-local (Windows). Paste this into any Claude sessio
 
 Done + verified across sessions: Higgsfield token rotated + verified live; brain, `~/.claude`, and XAVIER `data/` backed up off-machine (private `Kariimc/brain` repo + `XAVIER-BAK` thumbdrive, hourly task + Desktop launcher); XAVIER loaded with the real workload; the 9PM `evening-debrief` hardened (detached-HEAD guard + shared git lock + honest logging + UTF-8); and now the **advisor interview is DONE (goals v2)**.
 
+Backup state: the temporary Desktop evacuation folder `C:\Users\Kariim\Desktop\backup` was moved back to the thumbdrive as `E:\backup` on 2026-07-09; verified 239 files / 1,807,658 bytes and Desktop source removed. Keep using the `XAVIER-BAK` thumbdrive backup flow, but note this drive may currently be unlabeled after repair.
+
 Only-Kariim next step (nothing agent-actionable is open): review + send the offer one-pager (`xavier-agentic-os/data/offer-neon-forge.md`) — under v2 it doubles as proof/distribution. Everything else on the queue is DONE, BLOCKED-SCOPE (needs the Windows box), or a Kariim decision.
 
 MCP note: most claude.ai connector / plugin MCP servers (Notion, Figma, Supabase, Asana, Linear, etc.) are unauthenticated and unusable until Kariim connects them. Deliberately NOT bulk-connecting them (control-plane freeze / Stop-2): authenticate a server only when a paying task actually needs it, via `/mcp` in an interactive Claude Code session or claude.ai → Settings → Connectors.
