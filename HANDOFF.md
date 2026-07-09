@@ -8,6 +8,8 @@ Done + verified across sessions: Higgsfield token rotated + verified live; brain
 
 Backup state: the temporary Desktop evacuation folder `C:\Users\Kariim\Desktop\backup` was moved back to the thumbdrive as `E:\backup` on 2026-07-09; verified 239 files / 1,807,658 bytes and Desktop source removed. Keep using the `XAVIER-BAK` thumbdrive backup flow, but note this drive may currently be unlabeled after repair.
 
+Claude Eyes desktop launcher finished on 2026-07-09: `C:\Users\Kariim\Desktop\Claude Eyes.lnk` targets `C:\Users\Kariim\Dev\claude-eyes\start-eyes.bat` and uses the revised all-seeing-eye `eye.ico` (smaller eye seated at the pyramid peak). Target and icon verified.
+
 Only-Kariim next step (nothing agent-actionable is open): review + send the offer one-pager (`xavier-agentic-os/data/offer-neon-forge.md`) — under v2 it doubles as proof/distribution. Everything else on the queue is DONE, BLOCKED-SCOPE (needs the Windows box), or a Kariim decision.
 
 MCP note: most claude.ai connector / plugin MCP servers (Notion, Figma, Supabase, Asana, Linear, etc.) are unauthenticated and unusable until Kariim connects them. Deliberately NOT bulk-connecting them (control-plane freeze / Stop-2): authenticate a server only when a paying task actually needs it, via `/mcp` in an interactive Claude Code session or claude.ai → Settings → Connectors.
