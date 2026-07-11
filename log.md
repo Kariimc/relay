@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-11 code-local: Added Flow State repeatable `benchmark_flow.py` in ad624fd; latest quick medians: import 604.8 ms, text finish 0.2 ms, text history 2.3 ms, 10-second audio history 3.8 ms, overlay ceiling 20 ms.
 2026-07-11 code-local: Flow State performance slice 2 verified: 20 ms overlay polling, lazy/parallel audio startup, median startup path 22.6% faster, and desktop suite 17 tests OK across 9 Hub pages + 11 command buttons.
 2026-07-11 code-local: Started Flow State performance/differentiation mission; baseline captured, transcript insertion moved before history persistence, old-code regression proved red and full suite now 14 tests OK; work continues on `perf/reliability-baseline`.
 2026-07-09 code-local: Flow State icon polish shipped; pushed 2fb2649 (polished Desktop/tray artwork) and de4e596 (centered overlay mic badge).
