@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-11 code-local: Started Flow State performance/differentiation mission; baseline captured, transcript insertion moved before history persistence, old-code regression proved red and full suite now 14 tests OK; work continues on `perf/reliability-baseline`.
 2026-07-09 code-local: Flow State icon polish shipped; pushed 2fb2649 (polished Desktop/tray artwork) and de4e596 (centered overlay mic badge).
 2026-07-09 code-local: Flow State rename/roadmap shipped; pushed Kariimc/Flow-State fd854a7, repaired Desktop shortcut, verified compile + 13 tests + Hub smoke.
 2026-07-09 | code-local | Finished Claude Eyes Desktop launcher with revised all-seeing-eye icon: smaller eye at pyramid peak; shortcut target and icon verified.
