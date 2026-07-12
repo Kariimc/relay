@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-11 code-local: Flow State ten-feature contract written; #5 Clipboard Shield implemented with sequence-aware restore + typing fallback, bite proof red/green, full desktop suite 20 tests OK and 7 files compile.
 2026-07-11 code-local: Added Flow State repeatable `benchmark_flow.py` in ad624fd; latest quick medians: import 604.8 ms, text finish 0.2 ms, text history 2.3 ms, 10-second audio history 3.8 ms, overlay ceiling 20 ms.
 2026-07-11 code-local: Flow State performance slice 2 verified: 20 ms overlay polling, lazy/parallel audio startup, median startup path 22.6% faster, and desktop suite 17 tests OK across 9 Hub pages + 11 command buttons.
 2026-07-11 code-local: Started Flow State performance/differentiation mission; baseline captured, transcript insertion moved before history persistence, old-code regression proved red and full suite now 14 tests OK; work continues on `perf/reliability-baseline`.
