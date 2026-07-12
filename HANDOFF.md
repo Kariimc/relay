@@ -1,18 +1,31 @@
 # HANDOFF — global state (read me first)
 Updated: 2026-07-12 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-07-09)
-**XAVIER automation audit (2026-07-11):** Morning Briefing last ran at 08:25:34
-and failed with `0xFFFD0000`; no current briefing log exists. Historical logs
-prove the suite was installed from the now-missing Desktop repo, while the live
-repo is under `C:\Users\Kariim\Dev\xavier-agentic-os`, so a stale task action is
-the leading cause (inferred; the final live action-path query hit the execution
-service usage limit). Detailed handoff and safe fix order are at the top of the
-XAVIER `PROGRESS.md`. No task was modified or triggered. Next agent: patch the
-installer/logging/exit-code defects, then get a fresh yes before re-registering
-the four Windows tasks and proving each with result 0 + log + expected artifact.
+## LATEST -- where we left off (2026-07-12)
+**XAVIER is being built out as a PERSONAL tool, not a product (Kariim decided
+2026-07-12).** Packaging-for-sale and a marketing agent are OFF the table; the
+income-first / neon-forge-flagship plan stands. In-scope XAVIER work (personal
+assistant polish): voice always premium, log/text window containment, immersion
+(hide plumbing), a readable in-app brief folder, real immediate voice-command
+acting, full auto briefings + ingestion via **Obsidian**, a visual overhaul,
+claude-eyes vision, bridging to his other subs (Codex-pro, Google AI Studio, HF,
+"Moe" — undefined), and self-improve/distillation behind a Kariim-approval gate.
 
-**Flow State performance mission active 2026-07-11 on `perf/reliability-baseline`.** `DIFFERENTIATORS.md` defines ten community-backed gaps scoped against Wispr Flow, Aqua Voice, and Superwhisper. Completed: #5 Clipboard Shield and #1 Crash Journal. Crash Journal fsyncs every recognized segment under contained `data/recovery/` for normal, command, and continuous sessions; successful final history save removes it, while crash/save failure keeps it for Recovery Inbox. Append benchmark: median 3.3 ms, p95 5.6 ms. Bite proofs: removing containment let `../../outside` delete an external file; pre-journal runtime failed all three hotkey-mode wiring checks; restored code passed. Also replaced corrupted console glyphs after the wiring test exposed `UnicodeEncodeError` in direct `start_recording()`. Full desktop suite is 26 tests OK in 12.695s; 7 files compile; `flow.py` non-ASCII scan empty. Performance proof remains 22.6% faster median import+engine-warm and 20 ms overlay ceiling. Live Notepad launch remains deferred only because desktop execution-service usage is temporarily capped. Next: #2 Recovery Inbox UI with contained copy/retry/delete.
+**XAVIER briefing FIXED (2026-07-12).** Root cause confirmed: three tasks
+(`XAVIER Morning Briefing`, `XAVIER Evening Debrief`, `XAVIER Weekly Review`)
+pointed at the deleted `Desktop\xavier-agentic-os` path -> `0xFFFD0000`
+(4294770688). Repointed all three to `C:\Users\Kariim\Dev\xavier-agentic-os`
+(surgical Set-ScheduledTask, args only). Not triggered (spends tokens); 8AM run
+confirms. NOTE: a separate `XAVIER` task (my-skills\bin) also runs a lighter
+brief at 8AM — two briefings now fire; consolidation pending Kariim's call.
+
+**XAVIER voice FIXED (2026-07-12, commit 8097259).** `useVoice.ts` premium-first
++ retry: a 502/network blip used to drop that line to stock and a single 503
+latched the whole session to stock. Now retries premium 3x, never latches, stock
+only as true-outage last resort (logged). tsc+build green; audio-by-ear is a
+Kariim check. Loose failure-map output committed (28184a3).
+
+**Flow State performance mission active 2026-07-11 on `perf/reliability-baseline`.** `DIFFERENTIATORS.md` defines ten community-backed gaps scoped against Wispr Flow, Aqua Voice, and Superwhisper. Completed: #5 Clipboard Shield and #1 Crash Journal. Crash Journal fsyncs every recognized segment under contained `data/recovery/` for normal, command, and continuous sessions; successful final history save removes it, while crash/save failure keeps it for Recovery Inbox. Append benchmark: median 3.3 ms, p95 5.6 ms. Bite proofs: removing containment let `../../outside` delete an external file; pre-journal runtime failed all three hotkey-mode wiring checks; restored code passed. Also replaced corrupted console glyphs after the wiring test exposed `UnicodeEncodeError` in direct `start_recording()`. Full desktop suite is 26 tests OK in 12.695s; 7 files compile; `flow.py` non-ASCII scan empty. Performance proof remains 22.6% faster median import+engine-warm and 20 ms overlay ceiling. Live Notepad launch remains deferred only because desktop execution-service usage is temporarily capped. **#2 Recovery Inbox SHIPPED 2026-07-12 (commit b57db63, pushed to `perf/reliability-baseline`)** — text recovery added. Branch not yet merged to main.
 
 **The advisor interview ran and REORDERED the mission.** Authoritative plan is `~/.claude/advisor/goals.md` **v2**: **income-first, products-as-proof.** Reality that drove it: income $0, ~3-month runway, $3k/month floor. Belief ranking of income streams: 1) freelance, 2) a stable tech job, 3) products, 4) content. So it is NO LONGER "sell neon-forge first" — the mission is **land paid freelance work and/or a tech job fast** (goal 1: first paid client OR job offer by ~Aug 20), and ship neon-forge + Just-a-pinch as *portfolio proof* that makes him hireable/findable. The gap the interview named is **proof + distribution**, not skill. 12-month target still $50k (~$3k/mo floor + growth). The live STATUS-tracked queue is `xavier-agentic-os/data/roadmap-2026-07-consultant-audit.md` (see its STRATEGY UPDATE banner) + that repo's `PROGRESS.md` "Business queue" — both updated to v2 this session.
 

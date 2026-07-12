@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-12 code-local: Got up to speed across surfaces; found relay drift (Flow State #2 Recovery Inbox shipped b57db63 but unlogged). XAVIER: fixed morning-briefing 0xFFFD0000 (3 tasks repointed Desktop->Dev), committed loose failure-map output (28184a3), fixed voice premium-first+retry so a blip no longer drops to stock (8097259). Kariim scoped XAVIER as a PERSONAL tool (no sale), Obsidian for ingestion, stock voice only as last resort. Roadmap for remaining personal-tool features open.
 2026-07-11 code-local: Audited XAVIER automations; Morning Briefing failed `0xFFFD0000`, stale Desktop task path is the leading cause, no jobs changed, detailed fix/verification handoff added to XAVIER PROGRESS.md.
 2026-07-11 code-local: Flow State #1 Crash Journal complete: fsynced partials in all 3 modes, append p95 5.6 ms, containment + wiring bite proofs, 26 desktop tests OK; fixed corrupted status glyph UnicodeEncodeError.
 2026-07-11 code-local: Flow State ten-feature contract written; #5 Clipboard Shield implemented with sequence-aware restore + typing fallback, bite proof red/green, full desktop suite 20 tests OK and 7 files compile.
