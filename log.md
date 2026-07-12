@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-11 code-local: Audited XAVIER automations; Morning Briefing failed `0xFFFD0000`, stale Desktop task path is the leading cause, no jobs changed, detailed fix/verification handoff added to XAVIER PROGRESS.md.
 2026-07-11 code-local: Flow State #1 Crash Journal complete: fsynced partials in all 3 modes, append p95 5.6 ms, containment + wiring bite proofs, 26 desktop tests OK; fixed corrupted status glyph UnicodeEncodeError.
 2026-07-11 code-local: Flow State ten-feature contract written; #5 Clipboard Shield implemented with sequence-aware restore + typing fallback, bite proof red/green, full desktop suite 20 tests OK and 7 files compile.
 2026-07-11 code-local: Added Flow State repeatable `benchmark_flow.py` in ad624fd; latest quick medians: import 604.8 ms, text finish 0.2 ms, text history 2.3 ms, 10-second audio history 3.8 ms, overlay ceiling 20 ms.
