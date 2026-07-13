@@ -8,7 +8,9 @@ exact existing eleven-file bundle as-is. It is now commit `d4b386b` on
 `perf/reliability-baseline`, pushed to origin, with draft PR #2 open against
 `main`: <https://github.com/Kariimc/Flow-State/pull/2>. Do not merge without a
 fresh explicit yes. The disposable candidate passed all 96 tests in 24.555s;
-the live tree passed the same 96 tests in 41.667s, including all 14 native Tk
+the exact integration remains commit `d4b386b`; a docs-only current-competitor
+audit is commit `5c094e8`, also pushed to the same branch and draft PR. The live
+tree passed the same 96 tests in 41.667s, including all 14 native Tk
 page/button tests, and all 8 files compiled. `git diff --check` passed. Protected
 hashes prove Claude's `run.bat`/`run.vbs`, settings, Dictionary, vocabulary,
 History, and recordings were unchanged. The integrated dark-mode Hub opened,
@@ -18,9 +20,16 @@ exact expected payload, closed only its owned window, and measured 293.7 ms
 stop-to-cursor: 245.1 ms recognition plus 48.7 ms delivery. Official Tiny was
 faster than Base but exact on only 2/5 complete clips versus Base's 5/5, so Base
 remains default. GitHub has no Actions workflow/checks configured; PR #2 is
-clean and mergeable but intentionally draft/unmerged. Next: finish the
-apples-to-apples competitor performance and current exclusivity audit, then ask
-Kariim for the one merge decision.
+clean and mergeable but intentionally draft/unmerged. The official-doc audit
+found current adjacent features: Wispr failed-transcription retry, Aqua recent
+audio rerun, Superwhisper single-mode reprocessing, and macOS clipboard restore.
+`DIFFERENTIATORS.md` now names those overlaps and limits each gap to Flow State's
+complete guarded behavior; no app source was changed. None of Wispr Flow, Aqua
+Voice, or Superwhisper is installed on this laptop, and their public pages do
+not publish the same stop-to-cursor metric. Next: an apples-to-apples speed
+ranking requires installing/signing in to competitors and running the same
+machine test; do not replace that with vendor WPM claims. Then ask Kariim for
+the one merge decision.
 
 **XAVIER is being built out as a PERSONAL tool, not a product (Kariim decided
 2026-07-12).** Packaging-for-sale and a marketing agent are OFF the table; the
