@@ -2,22 +2,25 @@
 Updated: 2026-07-13 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-13)
-**Flow State restart audit, real palette integration, and model decision
-(2026-07-13).** An accidental laptop restart lost no work: every prepared
-reliability file, prototype, recording, benchmark, and handoff artifact remained
-on disk. The isolated build re-passed all 96 tests in 257.668s, including 14
-native Tk page/button tests, and all 8 files compiled. The approved palette is
-now in the real app, not only prototypes: `#4a4a73` light, `#aaa7d4` dark,
-Bodoni F, and matching waveform/generated-icon accents. The live branch passed
-31 tests in 19.492s, compiled, passed `git diff --check`, was visually verified
-in the actual dark Hub, and is pushed as `78558a2` on
-`perf/reliability-baseline` (preserving Claude's `run.bat`/`run.vbs`). Official
-Moonshine Tiny versus Base on the same ten recordings x five rounds: Base 145.6
-ms median / 310.7 p95 / 377.5 max; Tiny 81.3 / 194.6 / 212.7. Tiny was
-word-exact on only 2/5 complete reference clips versus Base's 5/5 (about 28.6%
-word error on that subset), so Base remains default. Next: apply the isolated
-ten-feature reliability bundle to live, reverify it, then run an apples-to-apples
-competitor benchmark before making a superiority claim.
+**Flow State ten-feature bundle integrated and pushed (2026-07-13).** Kariim
+explicitly said not to rewrite or redo the work, so code-local transferred the
+exact existing eleven-file bundle as-is. It is now commit `d4b386b` on
+`perf/reliability-baseline`, pushed to origin, with draft PR #2 open against
+`main`: <https://github.com/Kariimc/Flow-State/pull/2>. Do not merge without a
+fresh explicit yes. The disposable candidate passed all 96 tests in 24.555s;
+the live tree passed the same 96 tests in 41.667s, including all 14 native Tk
+page/button tests, and all 8 files compiled. `git diff --check` passed. Protected
+hashes prove Claude's `run.bat`/`run.vbs`, settings, Dictionary, vocabulary,
+History, and recordings were unchanged. The integrated dark-mode Hub opened,
+reached Ready, retained the approved muted-indigo palette, exposed Delivery
+Queue, and remained responsive. Guarded Notepad smoke inserted and saved the
+exact expected payload, closed only its owned window, and measured 293.7 ms
+stop-to-cursor: 245.1 ms recognition plus 48.7 ms delivery. Official Tiny was
+faster than Base but exact on only 2/5 complete clips versus Base's 5/5, so Base
+remains default. GitHub has no Actions workflow/checks configured; PR #2 is
+clean and mergeable but intentionally draft/unmerged. Next: finish the
+apples-to-apples competitor performance and current exclusivity audit, then ask
+Kariim for the one merge decision.
 
 **XAVIER is being built out as a PERSONAL tool, not a product (Kariim decided
 2026-07-12).** Packaging-for-sale and a marketing agent are OFF the table; the
