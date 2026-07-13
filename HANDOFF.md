@@ -1,7 +1,24 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-12 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-07-13 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-07-12)
+## LATEST -- where we left off (2026-07-13)
+**Flow State restart audit, real palette integration, and model decision
+(2026-07-13).** An accidental laptop restart lost no work: every prepared
+reliability file, prototype, recording, benchmark, and handoff artifact remained
+on disk. The isolated build re-passed all 96 tests in 257.668s, including 14
+native Tk page/button tests, and all 8 files compiled. The approved palette is
+now in the real app, not only prototypes: `#4a4a73` light, `#aaa7d4` dark,
+Bodoni F, and matching waveform/generated-icon accents. The live branch passed
+31 tests in 19.492s, compiled, passed `git diff --check`, was visually verified
+in the actual dark Hub, and is pushed as `78558a2` on
+`perf/reliability-baseline` (preserving Claude's `run.bat`/`run.vbs`). Official
+Moonshine Tiny versus Base on the same ten recordings x five rounds: Base 145.6
+ms median / 310.7 p95 / 377.5 max; Tiny 81.3 / 194.6 / 212.7. Tiny was
+word-exact on only 2/5 complete reference clips versus Base's 5/5 (about 28.6%
+word error on that subset), so Base remains default. Next: apply the isolated
+ten-feature reliability bundle to live, reverify it, then run an apples-to-apples
+competitor benchmark before making a superiority claim.
+
 **XAVIER is being built out as a PERSONAL tool, not a product (Kariim decided
 2026-07-12).** Packaging-for-sale and a marketing agent are OFF the table; the
 income-first / neon-forge-flagship plan stands. In-scope XAVIER work (personal
