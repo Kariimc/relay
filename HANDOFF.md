@@ -2,6 +2,17 @@
 Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-14)
+**CLAUDE-EYES GLOBAL HANDS-FREE DELIVERY LANDED (2026-07-14).** Alt+X now
+delivers a boxed still to the last active Claude, Claude Code terminal, or Codex
+task even when another app is focused. Alt+C does the same for a silent 10-second
+boxed video, and copying a video file in Explorer now extracts its timestamped
+contact sheet and automatically asks the task to look. The live watcher stayed
+running; the hotkey listener was cleanly restarted as PID 29468 and owns Alt+X.
+Real ffmpeg extraction produced four frames and a 1920x780 nonblank contact
+sheet; compile, target-selection, watcher-argument, and delivery tests passed.
+claude-eyes local/remote main match at 75204da. The durable screen-eyes skill is
+live in both Claude and Codex and landed in my-skills canonical master at
+9140fcf after all apex pre-commit and pre-push gates passed.
 **my-skills control-plane docs/gates landed (2026-07-14).** Kariim asked to get everything current and landed. `C:\Users\Kariim\Dev\my-skills` is clean on `master` and matches `origin/master` at `9af3ee5` (`docs: reconcile skill control-plane state`). Current default branch is `master` (not `main`). Live count is 419 skills / 67 agents. Updated active docs and annotated historical handoffs so old 399/411/416 counts are not mistaken for current state. Fixed `hooks/harness-router.sh` for Git Bash on Windows by converting Windows Python paths with `cygpath` and falling back to Codex runtime Python. Verification: bounded structural scan `skills=419 agents=67 hard=0 soft=0`; staged apex gates green; pre-commit gates green; pre-push gates green; push `f7f8d73..9af3ee5 master -> master`.
 **Flow State documentation audit MERGED TO MAIN (2026-07-14).** Kariim gave
 fresh approval and the documentation branch was merged and pushed as
