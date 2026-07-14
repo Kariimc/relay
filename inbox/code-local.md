@@ -9,7 +9,6 @@ pending until explicit approval; Review after 2 matches changes visibility only.
 Watcher supports exact-range standard Edit/RichEdit reads, excludes passwords,
 and stops on focus/control change. History corrected labels preserve original
 and delivered text. Do not download/rank another engine until 12 corrected
-saved-audio labels exist. PID 12844 is still the pre-merge live app because its
-exact-PID stop was denied by the external approval layer; restart only with
-permission and verify second --hub IPC. The three untracked preview/capture
-artifacts in the repo were excluded from commits.
+saved-audio labels exist. Old PID 12844 closed through Flow State IPC. The merged build is resident as PID
+23372, and a separate IPC hub request returned True. The three untracked
+preview/capture artifacts in the repo were excluded from commits.

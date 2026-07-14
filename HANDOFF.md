@@ -16,10 +16,10 @@ standard Windows Edit/RichEdit fields, excludes password controls, stops on
 focus/control change, and never auto-approves. Reviews also fixed Unicode case
 crashes, hidden first-match notices, oversized observations, History and
 Delivery Queue races, malformed-store preservation, and Tk callback cleanup.
-No candidate engine was downloaded or ranked. The resident pre-merge app remains
-PID 12844 because the external approval layer denied its exact-PID stop; the new
-build is on disk but still needs a permitted restart. Three untracked local
-review artifacts were deliberately excluded from every commit:
+No candidate engine was downloaded or ranked. Old PID 12844 closed through
+Flow State's own IPC quit command; the merged build is resident as PID 23372,
+and a separate IPC hub request returned True. Three untracked local review
+artifacts were deliberately excluded from every commit:
 accuracy-native-smoke.png, flow-state-accuracy-lab-preview.html, and
 ui_accuracy_smoke_temp.py.
 **CLAUDE-EYES GLOBAL HANDS-FREE DELIVERY LANDED (2026-07-14).** Alt+X now
