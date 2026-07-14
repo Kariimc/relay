@@ -6,7 +6,7 @@ Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session 
 fresh explicit merge approval with "have everything land on main." The full
 reliability branch, current competitor-gap audit, and waveform status-text fix
 are now on remote and local `main`. Merge commit: `f13ab0a`; final handoff
-commit: `93c4c3d`; waveform fix commit: `ed685f5`. The laptop checkout is clean
+commit: `30f0607`; waveform fix commit: `ed685f5`. The laptop checkout is clean
 on `main` and matches `origin/main`. The waveform no longer gives Tk a wrapping
 width: it measures real Segoe UI pixels, keeps one line, and trims the leading
 text with an ellipsis when needed. The regression test failed before the method
@@ -21,8 +21,9 @@ median 2601ms/p95 3114ms; Flow State's already-verified native Notepad value is
 Aqua was excluded because its web sandbox requires holding Space and the
 available browser control could not reproduce that fairly. No competitor app
 was installed. Temporary Stereo Mix was disabled and Microphone Array restored
-as Windows default. Next: restart Flow State once so its running process loads
-the new `main` files, then visually check one long overlay notice.
+as Windows default. Flow State was restarted from merged `main` as PID `12844`;
+a second `--hub` launch reached its IPC server and opened the existing Hub.
+No agent-actionable repository work remains from this bundle.
 
 **Flow State ten-feature bundle integrated and pushed (2026-07-13).** Kariim
 explicitly said not to rewrite or redo the work, so code-local transferred the
