@@ -2,6 +2,26 @@
 Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-14)
+**FLOW STATE ACCURACY LEARNING LANDED ON MAIN (2026-07-14).** Kariim approved
+"land it on main it's good." Feature commit 3ce2439 and docs commit a91437e
+merged at 3a80d55; exact merged-state handoff is d425e3e. Local and origin main
+match at d425e3e. The exact merge passed 120 tests in 89.931s, including 19
+native Tk Hub tests; all eight Python/test/benchmark files compiled and diff
+checks were clean. Accuracy now has explicit pending/approved/rejected correction
+memory, corrected History labels that preserve original and delivered text,
+approved Moonshine post-correction plus Whisper hotwords, three approval modes,
+a private 12-corrected-audio benchmark gate, and an independent Privacy clear.
+The automatic watcher is read-only, limited to the exact inserted range in
+standard Windows Edit/RichEdit fields, excludes password controls, stops on
+focus/control change, and never auto-approves. Reviews also fixed Unicode case
+crashes, hidden first-match notices, oversized observations, History and
+Delivery Queue races, malformed-store preservation, and Tk callback cleanup.
+No candidate engine was downloaded or ranked. The resident pre-merge app remains
+PID 12844 because the external approval layer denied its exact-PID stop; the new
+build is on disk but still needs a permitted restart. Three untracked local
+review artifacts were deliberately excluded from every commit:
+accuracy-native-smoke.png, flow-state-accuracy-lab-preview.html, and
+ui_accuracy_smoke_temp.py.
 **CLAUDE-EYES GLOBAL HANDS-FREE DELIVERY LANDED (2026-07-14).** Alt+X now
 delivers a boxed still to the last active Claude, Claude Code terminal, or Codex
 task even when another app is focused. Alt+C does the same for a silent 10-second
