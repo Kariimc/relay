@@ -1,7 +1,29 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-13 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-07-13)
+## LATEST -- where we left off (2026-07-14)
+**Flow State reliability work MERGED TO MAIN (2026-07-14).** Kariim gave
+fresh explicit merge approval with "have everything land on main." The full
+reliability branch, current competitor-gap audit, and waveform status-text fix
+are now on remote and local `main`. Merge commit: `f13ab0a`; final handoff
+commit: `93c4c3d`; waveform fix commit: `ed685f5`. The laptop checkout is clean
+on `main` and matches `origin/main`. The waveform no longer gives Tk a wrapping
+width: it measures real Segoe UI pixels, keeps one line, and trims the leading
+text with an ellipsis when needed. The regression test failed before the method
+existed, then the exact merge passed all 97 tests in 47.347s and all 8 Python /
+benchmark files compiled. Native Tk bounds were text `(30, 7, 176, 20)` inside
+background `(24, 3, 186, 23)`. Local `flow.py` SHA-256 is
+`4010552386AE46DAEEF81B807A709A9CFB719BA614ED188698E11BF5F7AC46FB`,
+matching the tested merge. A no-install browser comparison also completed on
+the same laptop: Wispr demo median 991ms/p95 1176ms; Superwhisper browser tool
+median 2601ms/p95 3114ms; Flow State's already-verified native Notepad value is
+293.7ms. This is browser-only evidence, not a desktop-app superiority claim.
+Aqua was excluded because its web sandbox requires holding Space and the
+available browser control could not reproduce that fairly. No competitor app
+was installed. Temporary Stereo Mix was disabled and Microphone Array restored
+as Windows default. Next: restart Flow State once so its running process loads
+the new `main` files, then visually check one long overlay notice.
+
 **Flow State ten-feature bundle integrated and pushed (2026-07-13).** Kariim
 explicitly said not to rewrite or redo the work, so code-local transferred the
 exact existing eleven-file bundle as-is. It is now commit `d4b386b` on
