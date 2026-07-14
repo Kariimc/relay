@@ -2,6 +2,23 @@
 Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-14)
+**Flow State documentation audit MERGED TO MAIN (2026-07-14).** Kariim gave
+fresh approval and the documentation branch was merged and pushed as
+`9891347`. Branch commits were `0b64e92` and final status correction `1544f2b`.
+All tracked project documents were checked against the shipped modules, Hub
+navigation, icons, current Windows settings, feature status, and test suite.
+The corrections remove obsolete active-branch/isolated-build claims, update
+the engineering and migration guides for the three-module app, mark completed
+wargames and original research as historical, correct the suite from 96 to 97
+tests, preserve the browser-only competitor caveat, and state that autostart is
+optional (the current Windows registry check returned `False`). Runtime code
+and user history/settings/dictionary/vocabulary/data were untouched. The exact
+merged `main` passed all 97 tests in 86.220s, compiled all eight Python/test/
+benchmark files using a separate writable bytecode cache, passed `git diff
+--check`, and has no broken tracked Markdown file references. Local and remote
+`main` match at `9891347`. The live PID `12844` remains running and did not need
+a restart because only documentation changed.
+
 **Flow State reliability work MERGED TO MAIN (2026-07-14).** Kariim gave
 fresh explicit merge approval with "have everything land on main." The full
 reliability branch, current competitor-gap audit, and waveform status-text fix
@@ -23,36 +40,7 @@ available browser control could not reproduce that fairly. No competitor app
 was installed. Temporary Stereo Mix was disabled and Microphone Array restored
 as Windows default. Flow State was restarted from merged `main` as PID `12844`;
 a second `--hub` launch reached its IPC server and opened the existing Hub.
-No agent-actionable repository work remains from this bundle.
-
-**Flow State ten-feature bundle integrated and pushed (2026-07-13).** Kariim
-explicitly said not to rewrite or redo the work, so code-local transferred the
-exact existing eleven-file bundle as-is. It is now commit `d4b386b` on
-`perf/reliability-baseline`, pushed to origin, with draft PR #2 open against
-`main`: <https://github.com/Kariimc/Flow-State/pull/2>. Do not merge without a
-fresh explicit yes. The disposable candidate passed all 96 tests in 24.555s;
-the exact integration remains commit `d4b386b`; a docs-only current-competitor
-audit is commit `5c094e8`, also pushed to the same branch and draft PR. The live
-tree passed the same 96 tests in 41.667s, including all 14 native Tk
-page/button tests, and all 8 files compiled. `git diff --check` passed. Protected
-hashes prove Claude's `run.bat`/`run.vbs`, settings, Dictionary, vocabulary,
-History, and recordings were unchanged. The integrated dark-mode Hub opened,
-reached Ready, retained the approved muted-indigo palette, exposed Delivery
-Queue, and remained responsive. Guarded Notepad smoke inserted and saved the
-exact expected payload, closed only its owned window, and measured 293.7 ms
-stop-to-cursor: 245.1 ms recognition plus 48.7 ms delivery. Official Tiny was
-faster than Base but exact on only 2/5 complete clips versus Base's 5/5, so Base
-remains default. GitHub has no Actions workflow/checks configured; PR #2 is
-clean and mergeable but intentionally draft/unmerged. The official-doc audit
-found current adjacent features: Wispr failed-transcription retry, Aqua recent
-audio rerun, Superwhisper single-mode reprocessing, and macOS clipboard restore.
-`DIFFERENTIATORS.md` now names those overlaps and limits each gap to Flow State's
-complete guarded behavior; no app source was changed. None of Wispr Flow, Aqua
-Voice, or Superwhisper is installed on this laptop, and their public pages do
-not publish the same stop-to-cursor metric. Next: an apples-to-apples speed
-ranking requires installing/signing in to competitors and running the same
-machine test; do not replace that with vendor WPM claims. Then ask Kariim for
-the one merge decision.
+No runtime work remains from this bundle.
 
 **XAVIER is being built out as a PERSONAL tool, not a product (Kariim decided
 2026-07-12).** Packaging-for-sale and a marketing agent are OFF the table; the
@@ -77,8 +65,6 @@ latched the whole session to stock. Now retries premium 3x, never latches, stock
 only as true-outage last resort (logged). tsc+build green; audio-by-ear is a
 Kariim check. Loose failure-map output committed (28184a3).
 
-**Flow State performance mission active 2026-07-11 on `perf/reliability-baseline`.** `DIFFERENTIATORS.md` defines ten community-backed gaps scoped against Wispr Flow, Aqua Voice, and Superwhisper. Completed: #5 Clipboard Shield and #1 Crash Journal. Crash Journal fsyncs every recognized segment under contained `data/recovery/` for normal, command, and continuous sessions; successful final history save removes it, while crash/save failure keeps it for Recovery Inbox. Append benchmark: median 3.3 ms, p95 5.6 ms. Bite proofs: removing containment let `../../outside` delete an external file; pre-journal runtime failed all three hotkey-mode wiring checks; restored code passed. Also replaced corrupted console glyphs after the wiring test exposed `UnicodeEncodeError` in direct `start_recording()`. Full desktop suite is 26 tests OK in 12.695s; 7 files compile; `flow.py` non-ASCII scan empty. Performance proof remains 22.6% faster median import+engine-warm and 20 ms overlay ceiling. Live Notepad launch remains deferred only because desktop execution-service usage is temporarily capped. **#2 Recovery Inbox SHIPPED 2026-07-12 (commit b57db63, pushed to `perf/reliability-baseline`)** — text recovery added. Branch not yet merged to main.
-
 **The advisor interview ran and REORDERED the mission.** Authoritative plan is `~/.claude/advisor/goals.md` **v2**: **income-first, products-as-proof.** Reality that drove it: income $0, ~3-month runway, $3k/month floor. Belief ranking of income streams: 1) freelance, 2) a stable tech job, 3) products, 4) content. So it is NO LONGER "sell neon-forge first" — the mission is **land paid freelance work and/or a tech job fast** (goal 1: first paid client OR job offer by ~Aug 20), and ship neon-forge + Just-a-pinch as *portfolio proof* that makes him hireable/findable. The gap the interview named is **proof + distribution**, not skill. 12-month target still $50k (~$3k/mo floor + growth). The live STATUS-tracked queue is `xavier-agentic-os/data/roadmap-2026-07-consultant-audit.md` (see its STRATEGY UPDATE banner) + that repo's `PROGRESS.md` "Business queue" — both updated to v2 this session.
 
 Done + verified across sessions: Higgsfield token rotated + verified live; brain, `~/.claude`, and XAVIER `data/` backed up off-machine (private `Kariimc/brain` repo + `XAVIER-BAK` thumbdrive, hourly task + Desktop launcher); XAVIER loaded with the real workload; the 9PM `evening-debrief` hardened (detached-HEAD guard + shared git lock + honest logging + UTF-8); and now the **advisor interview is DONE (goals v2)**.
@@ -87,10 +73,6 @@ Backup state: the temporary Desktop evacuation folder `C:\Users\Kariim\Desktop\b
 
 Claude Eyes desktop launcher finished on 2026-07-09: `C:\Users\Kariim\Desktop\Claude Eyes.lnk` targets `C:\Users\Kariim\Dev\claude-eyes\start-eyes.bat` and uses the revised all-seeing-eye `eye.ico` (smaller eye seated at the pyramid peak). Target and icon verified.
 
-
-Flow State icon polish shipped on 2026-07-09: commit `2fb2649` replaced the cheap icon pass with antialiased Desktop/tray artwork. Desktop `models\flow.ico` now has the red F in front of the waveform and graph-paper background. Tray `models\flow-tray.ico` is a shaded grey microphone with the red F centered in the mic head. Commit `de4e596` centers the floating waveform bar's mic badge inside the 26px pill. Verification: `python -m py_compile flow.py` passed; generated preview PNGs and size sheets in Codex outputs; GUI screenshot helper could not reliably capture the transparent overlay, so geometry was verified by the centered coordinates in code.
-
-Flow State rename + roadmap shipped on 2026-07-09: local repo is `C:\Users\Kariim\flow-state`, GitHub remote is `https://github.com/Kariimc/Flow-State.git`, commit `fd854a7` (`Add full Flow State hub options roadmap`) is pushed to `main`. Treat old "Whisper clone" wording as stale. Shipped: modern Hub in `flow_hub.py` with graph-paper light mode, charcoal graph-paper dark mode, heavy red F brand, red toggle knobs on neutral tracks, aligned sidebar icons, and pages for History, Dictionary, General, Dictation, Audio & mic, Appearance, Privacy, Files & meetings, and Statistics. Added `flow_features.py` + `test_flow_features.py` for local polish/profiles, vocabulary casing, selected-text commands, WAV read/transcription helper, JSONL history with owned audio retention, stats, and guarded deletion. Desktop shortcut now targets `C:\Users\Kariim\flow-state\.venv\Scripts\pythonw.exe` with `"C:\Users\Kariim\flow-state\flow.py" --hub`, working dir `C:\Users\Kariim\flow-state`, icon `models\flow.ico,0`; tray uses the same icon. Verification: real repo `py_compile` passed, `C:\Users\Kariim\flow-state\.venv\Scripts\python.exe -m unittest -v test_flow_features.py` ran 13 tests OK, Tk smoke captured 9 light pages + 2 dark pages, shortcut target/icon verified. Remaining manual follow-up: restart Flow State and run one live Notepad dictation; optional future scope is local-LLM deep clean.
 
 Only-Kariim next step (nothing agent-actionable is open): review + send the offer one-pager (`xavier-agentic-os/data/offer-neon-forge.md`) — under v2 it doubles as proof/distribution. Everything else on the queue is DONE, BLOCKED-SCOPE (needs the Windows box), or a Kariim decision.
 
