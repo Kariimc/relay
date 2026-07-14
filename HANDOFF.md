@@ -2,21 +2,22 @@
 Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-14)
-**Flow State documentation audit PUSHED, AWAITING MERGE APPROVAL (2026-07-14).**
+**Flow State documentation audit MERGED TO MAIN (2026-07-14).** Kariim gave
+fresh approval and the documentation branch was merged and pushed as
+`9891347`. Branch commits were `0b64e92` and final status correction `1544f2b`.
 All tracked project documents were checked against the shipped modules, Hub
 navigation, icons, current Windows settings, feature status, and test suite.
-The corrections are commit `0b64e92` on pushed branch
-`docs/current-state-audit`. They remove obsolete active-branch/isolated-build
-claims, update the engineering and migration guides for the three-module app,
-mark completed wargames and the original research as historical, correct the
-suite from 96 to 97 tests, preserve the browser-only competitor caveat, and
-state that autostart is optional (the current Windows registry check returned
-`False`). Runtime code and user history/settings/dictionary/vocabulary/data
-were untouched. Proof: all 97 tests passed in 37.301s, all eight Python/test/
-benchmark files compiled, `git diff --check` passed, and all local Markdown
-file references resolve. Flow State `main` remains at `30f0607`; the live PID
-`12844` was not restarted. A fresh explicit yes is required before merging the
-documentation branch to `main`.
+The corrections remove obsolete active-branch/isolated-build claims, update
+the engineering and migration guides for the three-module app, mark completed
+wargames and original research as historical, correct the suite from 96 to 97
+tests, preserve the browser-only competitor caveat, and state that autostart is
+optional (the current Windows registry check returned `False`). Runtime code
+and user history/settings/dictionary/vocabulary/data were untouched. The exact
+merged `main` passed all 97 tests in 86.220s, compiled all eight Python/test/
+benchmark files using a separate writable bytecode cache, passed `git diff
+--check`, and has no broken tracked Markdown file references. Local and remote
+`main` match at `9891347`. The live PID `12844` remains running and did not need
+a restart because only documentation changed.
 
 **Flow State reliability work MERGED TO MAIN (2026-07-14).** Kariim gave
 fresh explicit merge approval with "have everything land on main." The full
