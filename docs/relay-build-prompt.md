@@ -10,7 +10,7 @@ Do everything yourself through GitHub and the local filesystem. Do not ask Riimo
 
 - The ONLY store every surface can reach is GitHub. Chat reads public repos via the GitHub API. Claude Code (all machines) has git. Desktop/Cowork has the local clone.
 - Riimos already has: `Kariimc/my-skills` (398+ skills, deploys to `~/.claude/` via SessionStart hook, rules concatenated into global CLAUDE.md), a per-repo `PROGRESS.md` handoff system with an auto-read rule, and `cloud-setup-prompt.md` for GitHub-side setup. DO NOT rebuild any of that. The Relay sits ABOVE it: PROGRESS.md = per-project state; Relay = cross-project, cross-surface state and messages.
-- All Kariimc repos are public. Keep the relay public (chat needs unauthenticated API reads). NEVER put secrets in it.
+- Repos span TWO namespaces (user `Kariimc`, org `shift9-studio`) and are NOT all public - many are private. Keep the relay itself public (chat needs unauthenticated API reads). NEVER put secrets in it.
 
 ## ARCHITECTURE (build exactly this — simple, no frameworks)
 
