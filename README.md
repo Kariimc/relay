@@ -2,7 +2,7 @@
 
 One public repo all my Claude surfaces can reach. Plain rules:
 
-1. **Session start:** read `HANDOFF.md`, then your own file in `inbox/` (chat, code-local, code-cloud, cowork, steamdeck). Act on messages, then clear them (keep the header).
+1. **Session start:** read `HANDOFF.md`, then your own file in `inbox/` (chat, code-local, code-cloud, cowork). Act on messages, then clear them (keep the header).
 2. **Message another surface:** append a dated entry to its inbox file.
 3. **Before ending a session where state changed:** update `HANDOFF.md`, add one line to `log.md` (newest on top).
 4. **Commits:** `relay: <surface> — <one-line summary>`.
