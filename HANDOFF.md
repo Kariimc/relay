@@ -1,7 +1,8 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-14 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-07-21 by code-local (Windows). Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-07-14)
+## LATEST -- where we left off (2026-07-21)
+**NEW SKILL 3d-master-modeler SHIPPED TO my-skills MASTER (2026-07-21).** Kariim requested and explicitly authorized landing on master. New skill skills/3d-master-modeler: code-based 3D asset generation (Blender bpy headless / Three.js / OpenSCAD+CadQuery) with a 5-phase pipeline and headless render-verify loop; version-safe for Blender 4.x/5.x. Execution-verified: bpy template ran on local Blender 5.2 LTS headless (exit 0, clean mesh audit, 3 renders visually checked, glb exported); Three.js template rendered in browser with clean console. OpenSCAD template NOT execution-verified (OpenSCAD not installed locally). Landed at f9b7ca6 with all apex commit gates green and the apex CI run green; library count is now 421 skills / 68 agents, finder index rebuilt (playbook P-12: new skills are invisible to find-skills.py until the committed index is rebuilt). Skill is live in ~/.claude/skills this session but deliberately NOT in always-load.txt (on-demand via /pull-skill). Push also fast-forwarded the already-merged PR #44 screen-eyes merge commit 8b6e00e, which GitHub recorded as merged 2026-07-18 but remote master did not yet contain.
 **FLOW STATE ACCURACY LEARNING LANDED ON MAIN (2026-07-14).** Kariim approved
 "land it on main it's good." Feature commit 3ce2439 and docs commit a91437e
 merged at 3a80d55; exact merged-state handoff is d425e3e. Local and origin main
