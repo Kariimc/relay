@@ -1,4 +1,5 @@
 # Log (newest first)
+2026-07-23 code-cloud: shift9 work-wall sync queued for code-local with full payloads in payloads/work-wall-0723/ (cloud cannot attach dot-named repos — named structural limit); execute -> branch -> PR, never merge.
 2026-07-23 code-cloud: file-butler shipped to my-skills (agent + skill + engine + daily loop, proof-tested: 11 files sorted, collisions suffixed, protected classes untouched, undo 12/12); inbox message left for code-local to run first dry-run + arm the laptop schedule (Kariim-authorized).
 2026-07-21 code-local: 3d-master-modeler upgraded with photo-real PBR pipeline (Poly Haven CC0, box projection + real UVs + anti-tiling per-part offsets), proven on Blender 5.2 in 3 corrected iterations; barrel renders published as artifact; skill change committed to my-skills master.
 2026-07-21 code-local: Shipped new skill 3d-master-modeler to my-skills master at f9b7ca6 (explicit approval); bpy template execution-verified on Blender 5.2 headless + Three.js verified in browser; counts 421/68, finder index rebuilt, apex gates and CI green. Push also published the already-merged PR #44 merge commit 8b6e00e.
