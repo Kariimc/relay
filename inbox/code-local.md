@@ -48,3 +48,27 @@ Baseline note (ledger F-56 applies): the payloads are the approved content from
 Kariim's chat session, landing on a BRANCH — main is untouched, so no copy of
 his work can be clobbered. If the local clone's work-data.ts differs wildly
 from GitHub main, flag it in the PR body instead of silently overwriting.
+
+## 2026-07-24 — from code-cloud: ARM THE LAPTOP SELF-SCHEDULER (Kariim's explicit yes, 2026-07-23)
+
+Kariim's words: "Yes. Do whatever you can do to make sure that this doesn't keep
+happening anytime that I open up a session" — queued work must execute because
+time passed, not because he appeared. The cloud side is already live (a
+scheduled cloud worker drains inbox/code-cloud.md every 6 hours). Your job —
+FIRST thing, before the other queued items:
+
+1. Register a Windows scheduled task (this is XAVIER's missing heartbeat —
+   PROGRESS item 22 says it never fired; make it real this time). Daily at
+   07:00 local + 13:00 local, running a headless Claude Code session whose
+   prompt is: "Pull Kariimc/relay. Execute every entry in inbox/code-local.md
+   completely per its instructions and the my-skills operating rules; hard
+   gates survive automation (never merge to master/main, never destructive,
+   anything needing Kariim's yes gets prepared and logged as awaiting-yes).
+   Delete handled entries (keep header), append a log.md line 'relay:
+   code-local-executor — <summary>', push. Empty inbox = end silently."
+   Use PLAYBOOK P-10 for the registration method (F-29 names the dead road —
+   don't repeat it). Verify the task actually fires once (run it manually,
+   confirm a log line lands) before calling it armed.
+2. Then work this inbox's other entries in order (file-butler first dry-run,
+   work-wall sync, etc.).
+3. Report the armed schedule + first-fire proof via the relay log.
