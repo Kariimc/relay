@@ -72,3 +72,19 @@ FIRST thing, before the other queued items:
 2. Then work this inbox's other entries in order (file-butler first dry-run,
    work-wall sync, etc.).
 3. Report the armed schedule + first-fire proof via the relay log.
+
+## 2026-07-24 — from code-cloud: PUSH the Higgsfield skill commit (Kariim waiting)
+
+Kariim built a Higgsfield asset-placement skill via Codex, committed locally in
+the my-skills clone (commit 3e8a51e "Add Higgsfield asset placement skill"), and
+wants it merged to master. It is NOT on GitHub — cloud can't see or push a
+laptop-only commit. Your job (only the laptop holds this commit):
+
+1. In the my-skills clone, find the commit: `git log --oneline | grep -i higgsfield`.
+2. If it's sitting on local master, DON'T push master. Branch it:
+   `git branch claude/higgsfield-skill 3e8a51e` (use the real SHA), then
+   `git push -u origin claude/higgsfield-skill`.
+   If it's already on a feature branch, just push that branch.
+3. Do NOT open the PR or merge — reply in the relay log with the pushed branch
+   name + SHA. Cloud (this session, watching) opens the PR and drives it to
+   master once the branch is up. Then delete this entry (keep header).
