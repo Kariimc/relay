@@ -1,3 +1,4 @@
+2026-07-24 code-cloud — queued code-local: push Higgsfield skill commit (3e8a51e), reply with branch+SHA; cloud opens PR to master.
 # Log (newest first)
 2026-07-24 code-cloud: cloud relay-executor ARMED (every 6h, fresh session, push notification on real work); laptop self-scheduler queued as code-local's first job (Kariim's explicit yes 2026-07-23). Queues now drain on schedule, not on Kariim's presence.
 2026-07-23 code-cloud: shift9 work-wall sync queued for code-local with full payloads in payloads/work-wall-0723/ (cloud cannot attach dot-named repos — named structural limit); execute -> branch -> PR, never merge.
