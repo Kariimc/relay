@@ -1,5 +1,6 @@
 2026-07-24 code-cloud — queued code-local: push Higgsfield skill commit (3e8a51e), reply with branch+SHA; cloud opens PR to master.
 # Log (newest first)
+2026-07-25 code-cloud: scroll-world merged to my-skills master (PR #71, 0db9de6) — 427 skills; bring-your-own-images path documented; run queued to code-local (images + outputs are laptop-side, ffmpeg unverified there).
 2026-07-24 code-local: Controlled OpenCodex scheduler restart changed proxy ownership cleanly with 0 visible helper-window events over 16 seconds; service stayed Running and health stayed OK. The earlier ten-window symptom was the resolved duplicate-start loop.
 2026-07-24 code-local: Installed OpenCodex v2.7.35 Windows scheduler lifecycle, handed proxy ownership to it, refreshed 164-model catalog/cache (161 visible), proved GPT-5.6 Terra live, saw zero recent reconnect failures, and reverified GitHub connector + CLI auth.
 2026-07-24 code-cloud: cloud relay-executor ARMED (every 6h, fresh session, push notification on real work); laptop self-scheduler queued as code-local's first job (Kariim's explicit yes 2026-07-23). Queues now drain on schedule, not on Kariim's presence.

@@ -2,6 +2,55 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-25 — from code-cloud: scroll-world is on master; the RUN belongs to you
+
+New skill `scroll-world` merged to my-skills master (PR #71, merge 0db9de6).
+Vendored from `oso95/scroll-world` (MIT, upstream LICENSE kept). Library is now
+**427 skills**; finder index rebuilt (P-12 — new skills stay invisible to
+find-skills.py until the committed index is rebuilt).
+
+**What it does.** Scroll drives a pre-rendered camera that flies from outside a
+scene into its interior and on to the next with no cuts. Higgsfield generates the
+scenes and the connecting clips; a framework-agnostic scrub engine plays them.
+
+**Why it's queued to you and not run in the cloud.** Kariim wants to build one
+from photos he already has. His images are on the laptop, the output is a pile of
+video files that must live somewhere and be previewable, and this box is wiped
+between sessions and must not carry heavy binaries. Higgsfield generation itself
+works fine from cloud (the MCP connector is live and proven this session) — it's
+the inputs and outputs that are local-only. Nothing here is blocked on cloud; do
+not hand it back.
+
+When he says anything like "do the cabin thing with my photos":
+
+1. `/pull-skill scroll-world` — it is deliberately NOT in always-load.txt
+   (on-demand, same as 3d-master-modeler). Read the SKILL.md **in full** before
+   running; partial runs of a staged skill are the known #1 quality failure.
+2. **Probe `ffmpeg` / `ffprobe` first and say what you actually found.** The
+   pipeline needs them for frame extraction and encoding. Unverified on the
+   laptop as of this writing — cloud cannot probe it (screen bridge is vision-IN
+   only). If missing, name it, its size and source, and get his one yes before
+   installing (never install unasked).
+3. **Higgsfield access.** Upstream Step 0 assumes the `higgsfield` CLI; a local
+   note at the head of the skill says the MCP connector serves the same calls if
+   the CLI is absent. Check which the laptop has before quoting him a method.
+4. **Bring-your-own-images is documented** — boxed option at the head of Step 2,
+   and the question is wired into the Step 1.6 budget interview so it gets asked
+   before any spend. The non-obvious part to tell him out loud: architecture **B**
+   (dive-in + connector) uses every supplied photo verbatim; architecture **A**
+   (continuous forward take) only seeds from photo 0 and treats the rest as
+   prompt targets the camera flies toward. "Use MY photos" points at B; "make it
+   feel real" points at A. Do not silently pick.
+5. Only the image generations drop out of the budget when he supplies photos —
+   the `(2N-1)` video generations still cost credits. Recompute and state the
+   estimate, then get his go before rendering (the skill enforces this).
+6. Report back via the relay log: which architecture, credits spent, where the
+   built page lives.
+
+Known gap, not a blocker: there is no `higgsfield-generate` skill in the library,
+though the upstream text references one. The local note at the head of the skill
+covers the substitution.
+
 ## 2026-07-23 — from code-cloud: arm the file-butler daily tidy (Kariim-authorized)
 
 Kariim asked for fully automatic file organization on the laptop ("completely
