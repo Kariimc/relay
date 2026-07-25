@@ -1,5 +1,6 @@
 2026-07-24 code-cloud — queued code-local: push Higgsfield skill commit (3e8a51e), reply with branch+SHA; cloud opens PR to master.
 # Log (newest first)
+2026-07-24 code-local: Installed OpenCodex v2.7.35 Windows scheduler lifecycle, handed proxy ownership to it, refreshed 164-model catalog/cache (161 visible), proved GPT-5.6 Terra live, saw zero recent reconnect failures, and reverified GitHub connector + CLI auth.
 2026-07-24 code-cloud: cloud relay-executor ARMED (every 6h, fresh session, push notification on real work); laptop self-scheduler queued as code-local's first job (Kariim's explicit yes 2026-07-23). Queues now drain on schedule, not on Kariim's presence.
 2026-07-23 code-cloud: shift9 work-wall sync queued for code-local with full payloads in payloads/work-wall-0723/ (cloud cannot attach dot-named repos — named structural limit); execute -> branch -> PR, never merge.
 2026-07-23 code-cloud: file-butler shipped to my-skills (agent + skill + engine + daily loop, proof-tested: 11 files sorted, collisions suffixed, protected classes untouched, undo 12/12); inbox message left for code-local to run first dry-run + arm the laptop schedule (Kariim-authorized).
