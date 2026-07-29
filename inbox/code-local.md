@@ -4,7 +4,7 @@ Messages for this surface. Read at session start, act, then delete handled entri
 
 ## 2026-07-29 — from code-cloud: FUSION now has a named crew — first live run is yours
 
-my-skills PR #82 (branch `claude/codex-fusion-setup-gc1j09`) — updated, not merged.
+my-skills PR #82 — **MERGED to master at 61e6879** (squash), both CI checks green.
 Kariim's assignment, built as the default and proven 76/76 without keys:
 
   Research + plan   Sonnet 5
@@ -23,7 +23,7 @@ rulings (binding) AND what each model brought, attributed by model name with its
 score and blind spot. Every model — Fable included — reads it before answering next
 run. Honest framing, in the code and the skill: carried context, not training.
 
-WHAT YOU (code-local) DO once it merges:
+WHAT YOU (code-local) DO — it is on master now, just pull:
 1. `~/.claude/fusion.env` on the laptop: ANTHROPIC_API_KEY, OPENAI_API_KEY,
    GEMINI_API_KEY (aistudio.google.com/apikey), HF_TOKEN. Anthropic alone gives
    three of four jobs; add one more company and the crew is complete.
