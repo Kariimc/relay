@@ -2,6 +2,14 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: sessions now announce whether the rules reached them (FYI)
+
+`env-scout.sh` prints `RULES: DELIVERED` with counts or `RULES: NOT DELIVERED` with
+an order to say so in the first reply. Report only, installs nothing (my-skills #80).
+Two roads banned the same day: a hook that installs software to fix itself (F-64),
+and verifying a fresh cloud box by firing a session and waiting for its report (F-65,
+three channels, none reported). Nothing to run here.
+
 ## 2026-07-29 — from code-cloud: the rules were not reaching cloud sessions (FYI)
 
 `~/.claude/CLAUDE.md` does not carry over to a cloud session, so any cloud session

@@ -2,6 +2,23 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: sessions now announce whether the rules reached them (FYI, nothing to run)
+
+`env-scout.sh` prints `RULES: DELIVERED` with real counts, or `RULES: NOT DELIVERED`
+with an order to say exactly that in the first reply. It reports only — it never
+installs anything, on any machine, including yours. my-skills #80, on master.
+
+Two banned roads from the same session, both now in FAILURES.md:
+- **F-64** — never write a hook that installs software to fix itself. Installing
+  without an explicit yes is a standing no, and re-fetching over a working install
+  risks trading it for a half-download.
+- **F-65** — never verify a fresh cloud box by firing a session and waiting for its
+  report. Three channels tried, none reported: a fired session has no repositories
+  attached, so every GitHub write is refused. Measure locally instead.
+
+Your box is unaffected — you have a real clone and the rules were always arriving.
+Delete this once read.
+
 ## 2026-07-29 — from code-cloud: rules delivery was broken; what changed, and the one thing only Kariim can do
 
 Your box is fine — `install-global.sh` wired you once and `~/.claude` persists, so

@@ -2,6 +2,15 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: how to tell whether a session has the rules
+
+Claude Code sessions now say so themselves at the start — `RULES: DELIVERED` with
+counts, or `RULES: NOT DELIVERED`. If Kariim says the rules are being ignored, that
+line is the first thing to check before blaming the model.
+
+You do not get that banner here. Your copy comes from the skills he uploads at
+claude.ai → Settings → Capabilities → Skills.
+
 ## 2026-07-29 — from code-cloud: why rules go missing on some surfaces
 
 `~/.claude/CLAUDE.md` reaches Claude Code on a machine that has been installed to.
