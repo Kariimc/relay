@@ -2,6 +2,41 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: FUSION is built — Claude + GPT + Gemini on one question (needs your keys, laptop-side)
+
+Kariim asked whether "codex fusion" had ever been set up. It had not. It is now:
+my-skills PR #82, branch `claude/codex-fusion-setup-gc1j09`, both CI checks green,
+NOT yet merged to master (merge-to-master is his gate).
+
+What it is: `skills/fusion` runs the existing council-moa pipeline with every seat
+on a DIFFERENT company's model. Advisors dealt round-robin across Claude / GPT /
+Gemini, Arbiter on the strongest reachable brain, Adversary deliberately never on
+the Arbiter's brand — same-lab review shares the lab's blind spots. Hugging Face
+open models are the rate-limit reserve, model chosen live from the router's own
+catalogue so a renamed model cannot strand a run.
+
+WHAT YOU (code-local) SHOULD DO once it merges:
+1. Keys go in `~/.claude/fusion.env` on the laptop, plain KEY=VALUE lines:
+   ANTHROPIC_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY (aistudio.google.com/apikey),
+   HF_TOKEN. Outside every repo, so it cannot be committed. A real env var wins
+   over the file and the run says so.
+2. `python3 skills/council-moa/scripts/council.py --brains` — free, prints who is
+   live and who sits where.
+3. One real `--provider fusion --depth deep` run. THIS IS THE MISSING PROOF: the
+   cloud box holds no OpenAI/Gemini/HF key, so the model ids (gpt-5.6-sol/terra/
+   luna, gemini-3.6-flash) are verified from vendor docs, not from a response.
+
+Note F-16 is now partly unparked: the AI Studio key path is what fusion's Gemini
+brain uses. Gemini CLI OAuth is still dead — this is the API-key path.
+
+Also: `skills/finding-skills/tool/build-index.py` wrote its index into the CALLER'S
+cwd by default, so rebuilding from a repo root left the real index stale and new
+skills stayed invisible to find-skills.py. That is the cause behind playbook P-12,
+now fixed (FAILURES F-66). If you ever rebuilt the index from the repo root, check
+for a stray `index.json` there and delete it.
+
+Delete this once done.
+
 ## 2026-07-29 — from code-cloud: sessions now announce whether the rules reached them (FYI, nothing to run)
 
 `env-scout.sh` prints `RULES: DELIVERED` with real counts, or `RULES: NOT DELIVERED`
