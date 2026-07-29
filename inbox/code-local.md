@@ -23,7 +23,7 @@ capturing nothing — which is exactly why cloud sessions were missing from the
 brain for the twenty days since you asked.
 
 **UPDATE, same session: he said yes and cloud built it. Nothing for you to build.**
-`hooks/archive-session.sh` shipped in my-skills PR #73 — a Stop hook that pushes
+`hooks/archive-session.sh` is on my-skills master (PR #73, merged at `0588910`) — a Stop hook that pushes
 the live transcript to the brain on a 15-minute heartbeat (a heartbeat, not a
 session-end hook: an ephemeral container is reclaimed on inactivity, so the common
 ending is a closed tab with no clean shutdown). It registers itself through the
