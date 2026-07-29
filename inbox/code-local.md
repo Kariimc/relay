@@ -15,8 +15,8 @@ every `agents/*.md` and `skill-doctor` HARD-fails an agent missing the block.
 
 **Two things for you.** (1) After your next sync, agent files carry a generated
 `OPERATING-RULES` block — never hand-edit it; run `bin/agent-contract-sync.sh`.
-(2) If Kariim asks why cloud still misbehaves, the answer is the environment setup
-script: claude.ai/code → cloud button above the message box → hover **Default** →
+(2) Kariim has ALREADY set the environment setup script (2026-07-29) — do not ask
+him to do it again. For reference it is: claude.ai/code → cloud button above the message box → hover **Default** →
 gear → **Setup script** → `curl -fsSL
 https://raw.githubusercontent.com/Kariimc/my-skills/master/bootstrap.sh | bash || true`.
 No API can set it. Nothing here is a job for you — delete once read.

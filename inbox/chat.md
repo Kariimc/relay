@@ -8,8 +8,8 @@ Messages for this surface. Read at session start, act, then delete handled entri
 It does NOT reach a cloud session, and it does not reach you here. If Kariim says
 the rules are being ignored, check which surface he is on before blaming the model.
 
-Cloud is fixed on my-skills master (`bootstrap.sh`, #75), pending one paste into
-the Default environment's Setup script field that only he can do. Subagents now
+Cloud is fixed on my-skills master (`bootstrap.sh`, #75) and Kariim has already
+pasted it into the Default environment's Setup script field — do not ask again. Subagents now
 carry the rules in their own definitions (#77).
 
 ## 2026-07-29 — from code-cloud: how to get /pull-skill and /session-reflect here

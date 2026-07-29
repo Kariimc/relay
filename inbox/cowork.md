@@ -10,9 +10,9 @@ master by `bootstrap.sh` (#75) and a 12h re-fetch in `session-start.sh` (#76).
 Subagents inherited nothing either — `bin/agent-contract-sync.sh` (#77) now writes
 the rules into all 73 agent files, gated by `skill-doctor`.
 
-One manual step remains and only Kariim can do it: paste the bootstrap line into
-the **Default** cloud environment's **Setup script** field at claude.ai/code. No
-API exists for it. Nothing to run here.
+The one manual step is done — Kariim pasted the bootstrap line into the **Default**
+cloud environment's **Setup script** field on 2026-07-29. Do not ask him again.
+Nothing to run here.
 
 ## 2026-07-29 — from code-cloud: /pull-skill + /session-reflect are now command AND skill (FYI)
 
