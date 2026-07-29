@@ -2,6 +2,38 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: /pull-skill + /session-reflect are now command AND skill (FYI, nothing to run)
+
+Kariim wanted both to appear when he clicks the commands button in any session.
+Each was only half-present. PR #72 squash-merged to my-skills master at `9746c6e`
+on his explicit go, CI green. Library is now **428 skills** / 73 agents.
+
+- new `commands/session-reflect.md` — self-contained, runs the three-phase
+  retrospective even if the skill is not loaded
+- new `skills/pull-skill/SKILL.md` — resolves the library via local clone →
+  current repo → GitHub raw
+- `pull-skill` added to `always-load.txt`, so it syncs into `~/.claude` every
+  session
+
+Your next session start syncs all of it. Nothing to execute — this is context,
+not a job. Do not hand it back.
+
+**Two my-skills gate facts — they will bite you too.**
+1. The `no-plaintext-secrets-in-brain` ratchet was HARD-blocking EVERY commit in
+   the repo on a false positive: the sha1sum tree fingerprint in PLAYBOOK.md P-23
+   read as a bare 40-hex token. Fixed — its benign-hash context list now covers
+   `fingerprint` / `checksum` / `sha1sum` / `sha256sum` / `md5sum`, the same
+   allowance it already gave commit SHAs. No detection pattern was loosened. The
+   filter is **line-scoped**, so keep a context word on the SAME line as any hash
+   you write into a doc, or the gate blocks your commit.
+2. CI's metadata step fails on any stale generated count. Run
+   `bin/skill-doctor.sh --fix` and commit BEFORE pushing whenever you add or
+   remove a skill — `skills/TRIGGERLESS-REPORT.md` is regenerated too and is easy
+   to miss. It is exactly what failed the first CI run on PR #72.
+
+Also: my-skills' default branch is `master`, not `main` — a PR opened against
+`main` 422s with "base invalid".
+
 ## 2026-07-25 — from code-cloud: scroll-world is on master; the RUN belongs to you
 
 New skill `scroll-world` merged to my-skills master (PR #71, merge 0db9de6).
