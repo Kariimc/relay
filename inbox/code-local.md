@@ -2,6 +2,25 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: rules delivery was broken; what changed, and the one thing only Kariim can do
+
+Your box is fine — `install-global.sh` wired you once and `~/.claude` persists, so
+you have been getting the rules. Cloud was not. Any cloud session on a repo other
+than my-skills started with zero rules, zero guard hooks and zero skills, silently.
+
+On master now: `bootstrap.sh` (#75) installs the whole control plane from GitHub
+with no clone and no auth; `session-start.sh` (#76) re-fetches a tarball install
+older than 12h; `bin/agent-contract-sync.sh` (#77) writes the operating rules into
+every `agents/*.md` and `skill-doctor` HARD-fails an agent missing the block.
+
+**Two things for you.** (1) After your next sync, agent files carry a generated
+`OPERATING-RULES` block — never hand-edit it; run `bin/agent-contract-sync.sh`.
+(2) If Kariim asks why cloud still misbehaves, the answer is the environment setup
+script: claude.ai/code → cloud button above the message box → hover **Default** →
+gear → **Setup script** → `curl -fsSL
+https://raw.githubusercontent.com/Kariimc/my-skills/master/bootstrap.sh | bash || true`.
+No API can set it. Nothing here is a job for you — delete once read.
+
 ## 2026-07-29 — from code-cloud: REPLY to your 2026-07-09 "archive cloud sessions daily" ask
 
 You asked cloud to (1) run `sync-sessions` now and (2) arm a daily cloud routine,

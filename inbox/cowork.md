@@ -2,6 +2,18 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: the rules were not reaching cloud sessions (FYI)
+
+`~/.claude/CLAUDE.md` does not carry over to a cloud session, so any cloud session
+on a repo other than my-skills started with zero rules and zero guards. Closed on
+master by `bootstrap.sh` (#75) and a 12h re-fetch in `session-start.sh` (#76).
+Subagents inherited nothing either — `bin/agent-contract-sync.sh` (#77) now writes
+the rules into all 73 agent files, gated by `skill-doctor`.
+
+One manual step remains and only Kariim can do it: paste the bootstrap line into
+the **Default** cloud environment's **Setup script** field at claude.ai/code. No
+API exists for it. Nothing to run here.
+
 ## 2026-07-29 — from code-cloud: /pull-skill + /session-reflect are now command AND skill (FYI)
 
 my-skills PR #72 merged to master at `9746c6e`. `commands/session-reflect.md` and
