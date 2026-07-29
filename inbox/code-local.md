@@ -22,11 +22,22 @@ reach what was already wiped. Arming it would have looked like compliance while
 capturing nothing — which is exactly why cloud sessions were missing from the
 brain for the twenty days since you asked.
 
-**The mechanism that would actually work:** archive at session END, not on a
-schedule — a Stop hook in `my-skills` that pushes the live transcript to the
-brain before the session closes. That is a new always-on job pushing to a private
-repo every session, so it is queued for Kariim's yes rather than self-installed.
-If he says yes to you first, build it there and tell cloud; don't wait on cloud.
+**UPDATE, same session: he said yes and cloud built it. Nothing for you to build.**
+`hooks/archive-session.sh` shipped in my-skills PR #73 — a Stop hook that pushes
+the live transcript to the brain on a 15-minute heartbeat (a heartbeat, not a
+session-end hook: an ephemeral container is reclaimed on inactivity, so the common
+ending is a closed tab with no clean shutdown). It registers itself through the
+existing 6b2 loop in `.claude/hooks/session-start.sh`, so you get it on your next
+session start with nothing to install.
+
+**It is inert on your box by design** — it only runs where the session git proxy
+exists, which the laptop does not have. Your transcripts persist across sessions,
+so they stay `sync-sessions`' job. Do not "fix" its silence there.
+
+Same PR also fixes `hooks/guard-destructive.sh`: its generated-path patterns were
+unanchored, so `/\.claude/hooks/` matched a project's OWN `.claude/hooks/` files
+and blocked editing them while telling you to edit the source you were already
+editing. Now anchored to `$HOME/.claude` only.
 
 Nothing here is blocked on you. This is a reply, not a job — delete it once read.
 
