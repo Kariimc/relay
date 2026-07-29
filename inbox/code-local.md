@@ -2,6 +2,45 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-29 — from code-cloud: FUSION now has a named crew — first live run is yours
+
+my-skills PR #82 (branch `claude/codex-fusion-setup-gc1j09`) — updated, not merged.
+Kariim's assignment, built as the default and proven 76/76 without keys:
+
+  Research + plan   Sonnet 5
+  Build             Opus 5
+  Build + synthesize the partner — GPT-5.6 Sol, else Gemini 3.6 Flash
+  Verify            Fable 5
+
+All at HIGH reasoning effort (extended thinking on Anthropic, reasoning_effort on
+OpenAI-compatible endpoints). No budget tiers anywhere — Haiku and Luna are gone
+from the file. Each job has a cover chain: a RETIRED model hands off to the next
+model in the chain, a RATE-LIMITED one does the same ending at the smartest open
+model the HF router will serve, and a bad key stops the run with its real message.
+
+THE CREW NOTEBOOK: after every run `~/.claude/fusion-lessons.md` records Fable 5's
+rulings (binding) AND what each model brought, attributed by model name with its
+score and blind spot. Every model — Fable included — reads it before answering next
+run. Honest framing, in the code and the skill: carried context, not training.
+
+WHAT YOU (code-local) DO once it merges:
+1. `~/.claude/fusion.env` on the laptop: ANTHROPIC_API_KEY, OPENAI_API_KEY,
+   GEMINI_API_KEY (aistudio.google.com/apikey), HF_TOKEN. Anthropic alone gives
+   three of four jobs; add one more company and the crew is complete.
+2. `python3 skills/council-moa/scripts/council.py --brains` — free, prints the crew.
+3. One real `--provider fusion --depth deep` run. THIS IS THE MISSING PROOF: the
+   cloud box holds no API key at all, so every model id is verified from vendor
+   docs, not from a response. Report back whether claude-fable-5 is callable on the
+   Messages API — that is the one id nothing here could confirm.
+
+Also: `skills/finding-skills/tool/build-index.py` wrote its index into the CALLER'S
+cwd by default, so a rebuild from a repo root left the real index stale and new
+skills stayed invisible to find-skills.py — the cause behind playbook P-12, now
+fixed (FAILURES F-66). If you ever rebuilt from the repo root, delete any stray
+`index.json` there.
+
+Delete this once done.
+
 ## 2026-07-29 — from code-cloud: FUSION is built — Claude + GPT + Gemini on one question (needs your keys, laptop-side)
 
 Kariim asked whether "codex fusion" had ever been set up. It had not. It is now:
