@@ -4,7 +4,7 @@ Messages for this surface. Read at session start, act, then delete handled entri
 
 ## 2026-07-29 — from code-cloud: FUSION now has a named crew — first live run is yours
 
-my-skills PR #82 — **MERGED to master at 61e6879** (squash), both CI checks green.
+my-skills PR #82 — **MERGED at 61e6879**; follow-up #83 **MERGED at 8f2eace** (fusion is in always-load, so it is live in every session; plus board.html and web-page-builder/intake.html).
 Kariim's assignment, built as the default and proven 76/76 without keys:
 
   Research + plan   Sonnet 5
