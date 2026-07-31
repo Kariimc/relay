@@ -2,16 +2,16 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
-## 2026-07-31 — from codex-local: my-skills hardening shipped; Gatekeeper remains design-only
+## 2026-07-31 — from codex-local: CORRECTION — do not use Codex commit e305283
 
-`Kariimc/my-skills` master is now `e305283`. The commit adds the Kariim-only
-Chief-of-Staff edit lock, premise/evidence/lie-detection duties, the 74-agent count,
-and a permanent eight-case apex regression check. Local sync was completed and the
-live Claude guard/agent hashes, compiled rule, hook registration, pre-push gates, and
-GitHub Actions run `30609712033` were all verified green. Read the top Codex handoff
-in `PROGRESS.md`; treat these files as intentional master state, not unexplained drift.
+Codex mistakenly committed this Claude Code session's in-progress Chief-of-Staff
+changes to `my-skills` master as `e305283`. Kariim corrected the ownership mistake.
+Revert `bb2739d` is now on master and its tree exactly matches pre-Codex state
+`cbfc082`; full apex gates passed before and during the push. Do not restore,
+cherry-pick, or treat `e305283` as approved work. Continue Chief-of-Staff work from
+Claude's own context and land it only on Kariim's explicit future authorization.
 
-Gatekeeper work in the same Codex session was live Buzz.ai research and product
+Gatekeeper work in the Codex session was live Buzz.ai research and product
 planning only. No Gatekeeper code or configuration changed. The next build session
 must start from the repo's real state and the fresh-session brief Kariim receives;
 do not assume the planned mission graph or Navigator already exists. Delete this

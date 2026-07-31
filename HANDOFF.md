@@ -2,16 +2,14 @@
 Updated: 2026-07-31 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-31)
-**MY-SKILLS CHIEF-OF-STAFF HARDENING IS ON MASTER AND GREEN.** Codex published
-commit `e305283` directly to `Kariimc/my-skills` master on Kariim's explicit order.
-It adds Kariim-only edit protection for the Chief-of-Staff agent, global rule, and
-enforcement switch; strengthens premise checking and evidence-backed lie detection;
-updates the documented agent count to 74; and adds `apex/checks/cos-edit-lock.sh`,
-which proves all eight block/allow/override/syntax cases on every commit, push, and
-CI run. The local Claude agent and guard hashes were verified against the repo, the
-compiled rule was found in the global Claude instructions, and the guard registration
-was verified. Commit-time gates, pre-push apex gates, and GitHub Actions run
-`30609712033` all passed. `PROGRESS.md` contains the durable file-level handoff.
+**CORRECTION — CODEX'S CHIEF-OF-STAFF COMMIT WAS REVERTED.** Codex mistakenly
+committed Claude Code's in-progress Chief-of-Staff work to `my-skills` master as
+`e305283`. Kariim corrected the ownership mistake immediately. Revert `bb2739d` is
+now on master and restores the repository byte-for-byte to the tree at `cbfc082`,
+the state before Codex's commit. The full apex suite passed before and during the
+revert push. Do not restore, cherry-pick, or treat `e305283` as intentional master
+state. Chief-of-Staff work belongs to its Claude Code session until Kariim explicitly
+authorizes a future landing.
 
 **GATEKEEPER IS STILL DESIGN-ONLY IN THIS ARC.** Codex completed live public research
 on Buzz.ai and defined the Gatekeeper direction: one command becomes a private,
