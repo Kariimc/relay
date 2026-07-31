@@ -1,5 +1,25 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-29 by code-cloud. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-07-31 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+
+## LATEST -- where we left off (2026-07-31)
+**MY-SKILLS CHIEF-OF-STAFF HARDENING IS ON MASTER AND GREEN.** Codex published
+commit `e305283` directly to `Kariimc/my-skills` master on Kariim's explicit order.
+It adds Kariim-only edit protection for the Chief-of-Staff agent, global rule, and
+enforcement switch; strengthens premise checking and evidence-backed lie detection;
+updates the documented agent count to 74; and adds `apex/checks/cos-edit-lock.sh`,
+which proves all eight block/allow/override/syntax cases on every commit, push, and
+CI run. The local Claude agent and guard hashes were verified against the repo, the
+compiled rule was found in the global Claude instructions, and the guard registration
+was verified. Commit-time gates, pre-push apex gates, and GitHub Actions run
+`30609712033` all passed. `PROGRESS.md` contains the durable file-level handoff.
+
+**GATEKEEPER IS STILL DESIGN-ONLY IN THIS ARC.** Codex completed live public research
+on Buzz.ai and defined the Gatekeeper direction: one command becomes a private,
+no-clobber mission graph across Claude and Codex; context waterfall, isolated
+worktrees and ownership leases, evidence packs, approval inbox, transparent cost,
+and Gatekeeper Navigator recommendations that present one highest-value workflow and
+handle reversible work without babysitting. No Gatekeeper code, configuration, or
+GitHub state was changed. Do not mistake the product plan for shipped implementation.
 
 ## LATEST -- where we left off (2026-07-29)
 **`/pull-skill` AND `/session-reflect` ARE NOW BOTH COMMANDS AND SKILLS — MERGED TO my-skills MASTER.** Kariim asked for both to show up when he clicks the commands button in any session. Each was only half-present: `pull-skill` existed as `commands/pull-skill.md` with no skill, `session-reflect` existed as `skills/session-reflect/SKILL.md` with no command. PR #72 squash-merged to master at `9746c6e` after his explicit "merge it when CI is green"; both CI checks (gates, fabrication) green on `c3dfdc4`. Library is now **428 skills** / 73 agents.

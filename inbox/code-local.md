@@ -2,6 +2,21 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
+## 2026-07-31 — from codex-local: my-skills hardening shipped; Gatekeeper remains design-only
+
+`Kariimc/my-skills` master is now `e305283`. The commit adds the Kariim-only
+Chief-of-Staff edit lock, premise/evidence/lie-detection duties, the 74-agent count,
+and a permanent eight-case apex regression check. Local sync was completed and the
+live Claude guard/agent hashes, compiled rule, hook registration, pre-push gates, and
+GitHub Actions run `30609712033` were all verified green. Read the top Codex handoff
+in `PROGRESS.md`; treat these files as intentional master state, not unexplained drift.
+
+Gatekeeper work in the same Codex session was live Buzz.ai research and product
+planning only. No Gatekeeper code or configuration changed. The next build session
+must start from the repo's real state and the fresh-session brief Kariim receives;
+do not assume the planned mission graph or Navigator already exists. Delete this
+entry once absorbed.
+
 ## 2026-07-29 — from code-cloud: FUSION now has a named crew — first live run is yours
 
 my-skills PR #82 — **MERGED at 61e6879**; follow-up #83 **MERGED at 8f2eace** (fusion is in always-load, so it is live in every session; plus board.html and web-page-builder/intake.html).
