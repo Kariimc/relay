@@ -11,35 +11,23 @@ revert push. Do not restore, cherry-pick, or treat `e305283` as intentional mast
 state. Chief-of-Staff work belongs to its Claude Code session until Kariim explicitly
 authorizes a future landing.
 
-**GATEKEEPER'S FIRST REAL VESPERMESH SLICE IS PUSHED TO DRAFT PR #1.** Public
-branch `codex/phase-1-vertical-slice` is at commit `84bb04b`; do not merge without
-Kariim's fresh approval. The verified read-only backend still collects real
-repository context, ranks one Navigator workflow, persists a mission graph and
-evidence across restart, connects the read-only GitHub App, runs safe Claude/Codex
-adapters or exact blocked states, and exposes the locked-down Docker test room.
-Kariim approved the black-silk Vespermesh direction, and the production UI now
-uses only the real repository, mission, GitHub, evidence, event, and test-lab APIs.
-It includes plain-language navigation, bundled Geist fonts, a bold outlined red-V
-working mark over real micro-web texture, responsive Project/Goal context, honest
-loading/empty/blocked/failed/complete states, and Expert details for technical data.
+**GATEKEEPER'S FIRST REAL VESPERMESH SLICE IS FULLY VERIFIED IN DRAFT PR #1.**
+Public branch `codex/phase-1-vertical-slice` is at `66be4b7`; local HEAD, remote
+branch, and PR head match. The PR remains open, draft, and unmerged; do not merge
+without Kariim's fresh approval. Final independent code, React, and accessibility
+reviews found no material issues. Proof: 50/50 tests, hooks lint, production build
+(246.81 kB JS / 75.24 kB gzip), audit 0, diff check, and tracked-secret scan all
+green. GitHub has no status checks or workflow runs configured for this commit.
 
-Latest client hardening at `2e1b81a` restores missions from a validated UUID URL,
-refuses stale repository context, updates mission/proof/activity atomically,
-validates every API response, guards request races, and repairs mobile keyboard
-focus. Proof: 42/42 tests when long Windows files run serially; focused client
-tests 5/5 with a 4/5 red bite when the Docker success/exit-code guard is removed;
-lint with React hooks, build (245.19 kB JS / 74.80 kB gzip), and audit 0 all green.
-Browser proof passed desktop + 480 px with no console errors/overflow, URL
-create/reload/back resume, visible refresh, and trapped/Escape/restored dialog
-focus. A fresh-chat transition interrupted the final code/React/accessibility
-re-review and one redundant final gate invocation; rerun those before declaring
-the milestone complete. Port 3000 is free and no interrupted Gatekeeper test/server
-process was found. Exact continuation is committed in Gatekeeper `PROGRESS.md`.
-
-Live external truth is unchanged: GitHub is connected and Docker is ready; Claude
-is at its separate weekly limit, Codex lacks the required strict readable-root
-contract, and the pinned Docker image download is cut off by the registry, so no
-runner success is simulated.
+The read-only backend and Vespermesh UI now use atomic mission snapshots,
+operation-specific time limits, strict stale-route and evidence validation, and
+mobile focus/contrast repairs. Live desktop and 480 px mission flows had no
+overflow or console errors; resizing closed the mobile sheet, cleared inert state,
+and restored focus to the mission view. GitHub remains connected read-only and
+Docker 29.6.2 reports ready. Runner limitations remain explicit, not simulated:
+`CLAUDE_RATE_LIMITED`, `CODEX_APP_SERVER_RESTRICTED_READ_UNSUPPORTED`,
+`NO_VERIFIED_RUNNER_EVIDENCE`, and `DOCKER_IMAGE_PROBE_TIMEOUT`. Exact proof and
+continuation state are committed in Gatekeeper `PROGRESS.md`.
 
 ## LATEST -- where we left off (2026-07-29)
 **`/pull-skill` AND `/session-reflect` ARE NOW BOTH COMMANDS AND SKILLS — MERGED TO my-skills MASTER.** Kariim asked for both to show up when he clicks the commands button in any session. Each was only half-present: `pull-skill` existed as `commands/pull-skill.md` with no skill, `session-reflect` existed as `skills/session-reflect/SKILL.md` with no command. PR #72 squash-merged to master at `9746c6e` after his explicit "merge it when CI is green"; both CI checks (gates, fabrication) green on `c3dfdc4`. Library is now **428 skills** / 73 agents.
