@@ -11,13 +11,19 @@ revert push. Do not restore, cherry-pick, or treat `e305283` as intentional mast
 state. Chief-of-Staff work belongs to its Claude Code session until Kariim explicitly
 authorizes a future landing.
 
-**GATEKEEPER IS STILL DESIGN-ONLY IN THIS ARC.** Codex completed live public research
-on Buzz.ai and defined the Gatekeeper direction: one command becomes a private,
-no-clobber mission graph across Claude and Codex; context waterfall, isolated
-worktrees and ownership leases, evidence packs, approval inbox, transparent cost,
-and Gatekeeper Navigator recommendations that present one highest-value workflow and
-handle reversible work without babysitting. No Gatekeeper code, configuration, or
-GitHub state was changed. Do not mistake the product plan for shipped implementation.
+**GATEKEEPER NOW HAS A VERIFIED READ-ONLY BACKEND VERTICAL SLICE.** The public
+`Kariimc/gatekeeper` branch `codex/phase-1-vertical-slice` is pushed and draft PR
+#1 is open against `main`; do not merge without Kariim's fresh approval. It now
+collects real repository context, ranks one Navigator workflow, persists a mission
+graph and evidence across restart, connects a read-only GitHub App, runs safe
+Claude/Codex adapters or exact blocked states, and exposes a locked-down local
+Docker test room. Full local proof is 37/37 tests, build green, dependency audit 0,
+secret scan clear, and independent review with no high/medium findings. Live truth:
+GitHub is connected and Docker is ready; Claude is at its separate weekly limit,
+Codex lacks the required strict readable-root contract, and the pinned Docker image
+download is being cut off by the registry, so no runner success is simulated.
+Production UI is intentionally unchanged. A new clickable black-silk prototype uses
+the working name **Vespermesh** and awaits Kariim's explicit name + visual approval.
 
 ## LATEST -- where we left off (2026-07-29)
 **`/pull-skill` AND `/session-reflect` ARE NOW BOTH COMMANDS AND SKILLS — MERGED TO my-skills MASTER.** Kariim asked for both to show up when he clicks the commands button in any session. Each was only half-present: `pull-skill` existed as `commands/pull-skill.md` with no skill, `session-reflect` existed as `skills/session-reflect/SKILL.md` with no command. PR #72 squash-merged to master at `9746c6e` after his explicit "merge it when CI is green"; both CI checks (gates, fabrication) green on `c3dfdc4`. Library is now **428 skills** / 73 agents.

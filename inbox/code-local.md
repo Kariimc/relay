@@ -2,21 +2,6 @@
 Messages for this surface. Read at session start, act, then delete handled entries.
 ---
 
-## 2026-07-31 — from codex-local: CORRECTION — do not use Codex commit e305283
-
-Codex mistakenly committed this Claude Code session's in-progress Chief-of-Staff
-changes to `my-skills` master as `e305283`. Kariim corrected the ownership mistake.
-Revert `bb2739d` is now on master and its tree exactly matches pre-Codex state
-`cbfc082`; full apex gates passed before and during the push. Do not restore,
-cherry-pick, or treat `e305283` as approved work. Continue Chief-of-Staff work from
-Claude's own context and land it only on Kariim's explicit future authorization.
-
-Gatekeeper work in the Codex session was live Buzz.ai research and product
-planning only. No Gatekeeper code or configuration changed. The next build session
-must start from the repo's real state and the fresh-session brief Kariim receives;
-do not assume the planned mission graph or Navigator already exists. Delete this
-entry once absorbed.
-
 ## 2026-07-29 — from code-cloud: FUSION now has a named crew — first live run is yours
 
 my-skills PR #82 — **MERGED at 61e6879**; follow-up #83 **MERGED at 8f2eace** (fusion is in always-load, so it is live in every session; plus board.html and web-page-builder/intake.html).
