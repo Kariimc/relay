@@ -2,6 +2,18 @@
 Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-08-01)
+**SHIFT-9 PRODUCT ROOMS AND STUDIO POLISH LANDED ON MAIN (2026-08-01).**
+`shift9-studio/.github` PR #40 merged into `main` at merge commit `6c7b70e`
+from verified head `dc41377`. `/instrument` is now a client-facing open-lab
+case study, `/instrument/reference` is a living archive of all twelve projects,
+Flow State has its black-water surface, the Studio reel and invitation were
+refined, public copy and pearl controls were normalized, and the archive scan
+uses a soft optical wash. Kariim rejected the curtain and WebGPU experiments;
+the landing yarn is the original static photograph and Enter hands directly to
+the preloaded film. Proof: monorepo typecheck, both production builds, route
+contracts, live static-frame browser check, and all three fresh Vercel checks
+passed. Do not restore yarn movement unless Kariim asks for a new direction.
+
 **BRING UP DESK FUTURE-EPISODE HARDENING LANDED ON MAIN (2026-08-01).**
 `Kariimc/Faceless-Tech-youtube` PR #10 merged into `main` at merge commit
 `9ac6b6ce`, from verified head `52ec2ef`. It adds fail-safe licensed/decoded
