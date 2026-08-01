@@ -37,23 +37,27 @@ revert push. Do not restore, cherry-pick, or treat `e305283` as intentional mast
 state. Chief-of-Staff work belongs to its Claude Code session until Kariim explicitly
 authorizes a future landing.
 
-**GATEKEEPER'S FIRST REAL VESPERMESH SLICE IS FULLY VERIFIED IN DRAFT PR #1.**
-Public branch `codex/phase-1-vertical-slice` is at `66be4b7`; local HEAD, remote
-branch, and PR head match. The PR remains open, draft, and unmerged; do not merge
-without Kariim's fresh approval. Final independent code, React, and accessibility
-reviews found no material issues. Proof: 50/50 tests, hooks lint, production build
-(246.81 kB JS / 75.24 kB gzip), audit 0, diff check, and tracked-secret scan all
-green. GitHub has no status checks or workflow runs configured for this commit.
+**VESPERMESH IS RENAMED AND LANDED ON MAIN.** Public repository
+`Kariimc/Vespermesh` replaces `Kariimc/gatekeeper` with the same repository ID.
+PR #1 merged the first read-only vertical slice at `77bbf1d` from verified head
+`b9847ba`; final `PROGRESS.md` / `HANDOFF.md` state is on `main` at `baa71bc`.
+The local checkout folder and `origin` use Vespermesh, and the feature branch is
+retained. Proof: 52/52 serial tests, TypeScript and React Hooks lint, production
+build (246.99 kB JS / 75.28 kB gzip), audit 0, clean diff/secret scan, and final
+code, security, and React reviews with every finding resolved.
 
-The read-only backend and Vespermesh UI now use atomic mission snapshots,
-operation-specific time limits, strict stale-route and evidence validation, and
-mobile focus/contrast repairs. Live desktop and 480 px mission flows had no
-overflow or console errors; resizing closed the mobile sheet, cleared inert state,
-and restored focus to the mission view. GitHub remains connected read-only and
-Docker 29.6.2 reports ready. Runner limitations remain explicit, not simulated:
-`CLAUDE_RATE_LIMITED`, `CODEX_APP_SERVER_RESTRICTED_READ_UNSUPPORTED`,
-`NO_VERIFIED_RUNNER_EVIDENCE`, and `DOCKER_IMAGE_PROBE_TIMEOUT`. Exact proof and
-continuation state are committed in Gatekeeper `PROGRESS.md`.
+The saved read-only GitHub connection migrated safely: the old repository name
+reported refresh-required, the same selected installation was re-verified live
+against `Kariimc/Vespermesh`, and merged `main` restarted still connected. The
+live app showed `Vespermesh / main` with no console warnings or errors. Legacy
+`GATEKEEPER_*`, local app-data, and internal module identifiers remain unchanged
+for compatibility. Next work is explicit in Vespermesh `PROGRESS.md`: add GitHub
+Actions; rerun real Claude/Codex evidence after their external blockers clear;
+complete one pinned-image Docker run; add worktrees/ownership leases before any
+write-capable Phase 2; and finalize the V mark only after visual/trademark review.
+Current exact blockers remain `CLAUDE_RATE_LIMITED`,
+`CODEX_APP_SERVER_RESTRICTED_READ_UNSUPPORTED`, `NO_VERIFIED_RUNNER_EVIDENCE`,
+and `DOCKER_IMAGE_PROBE_TIMEOUT`.
 
 ## LATEST -- where we left off (2026-07-29)
 **`/pull-skill` AND `/session-reflect` ARE NOW BOTH COMMANDS AND SKILLS — MERGED TO my-skills MASTER.** Kariim asked for both to show up when he clicks the commands button in any session. Each was only half-present: `pull-skill` existed as `commands/pull-skill.md` with no skill, `session-reflect` existed as `skills/session-reflect/SKILL.md` with no command. PR #72 squash-merged to master at `9746c6e` after his explicit "merge it when CI is green"; both CI checks (gates, fabrication) green on `c3dfdc4`. Library is now **428 skills** / 73 agents.
