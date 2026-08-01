@@ -2,6 +2,30 @@
 Updated: 2026-07-31 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-07-31)
+**FLOW STATE WAITLIST IS COMPLETE IN READY PR #39, UNMERGED.**
+`shift9-studio/.github` branch `claude/flow-state-waitlist` is at `8e96def`;
+local, remote, and PR heads match. All PR checks pass and the PR is mergeable,
+but nothing merges without Kariim's fresh approval.
+
+The approved `/flow-state` page is linked from the live studio reel and has the
+solid titanium F, animated waveform, simulated dictation, waitlist capture, and
+no visible project number. Both app builds, typecheck, contract tests, desktop /
+390px visual checks, reduced motion, and final independent review are green.
+
+The production Supabase waitlist now uses unique `(lower(email), source)`, requires
+a nonblank source, and retains insert-only RLS. Rollback tests proved one email can
+join both Just-a-Pinch and Flow State while same-product duplicates stay blocked.
+Shift9 Vercel Production + Preview have the public Supabase URL and publishable
+anon key. The protected branch preview returned 200; a real synthetic signup was
+stored once, duplicate-masked, then deleted with zero test rows remaining.
+
+**Vercel gotcha:** `vercel env pull` returns an 11-character placeholder for a
+sensitive value. Copying it caused `Invalid supabaseUrl` and preview 500s. For
+these public client values, restore from the repo's `.env.example`, redeploy, and
+test the real endpoint. Deployment-wide rate limiting is still a separate
+hardening item; the branch uses a honeypot plus a bounded per-instance limiter.
+
+## LATEST -- where we left off (2026-07-31)
 **CORRECTION — CODEX'S CHIEF-OF-STAFF COMMIT WAS REVERTED.** Codex mistakenly
 committed Claude Code's in-progress Chief-of-Staff work to `my-skills` master as
 `e305283`. Kariim corrected the ownership mistake immediately. Revert `bb2739d` is
