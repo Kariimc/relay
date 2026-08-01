@@ -1,23 +1,23 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-07-31 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-07-31)
-**FLOW STATE WAITLIST IS COMPLETE IN READY PR #39, UNMERGED.**
-`shift9-studio/.github` branch `claude/flow-state-waitlist` is at `8e96def`;
-local, remote, and PR heads match. All PR checks pass and the PR is mergeable,
-but nothing merges without Kariim's fresh approval.
+## LATEST -- where we left off (2026-08-01)
+**FLOW STATE WAITLIST IS MERGED AND LIVE.**
+`shift9-studio/.github` PR #39 merged to `main` at `62bdea5` from verified head
+`2c7ef7c`. Production at `www.shift9.dev/flow-state` uses the warm holofoil F;
+the headline stays titanium, with no square, project number, or cyan/indigo combo.
 
-The approved `/flow-state` page is linked from the live studio reel and has the
-solid titanium F, animated waveform, simulated dictation, waitlist capture, and
-no visible project number. Both app builds, typecheck, contract tests, desktop /
-390px visual checks, reduced motion, and final independent review are green.
+Proof: contract red/green mutation, typecheck, both production builds, PR checks,
+and independent review passed. Live desktop and 390px mobile have no horizontal
+overflow and the waveform is active. The page returned 200; first and duplicate
+API requests returned 200; the actual browser form succeeded; Supabase stored
+exactly one row per test; all synthetic rows were deleted to zero; and production
+reported no 500 logs after the live checks.
 
-The production Supabase waitlist now uses unique `(lower(email), source)`, requires
-a nonblank source, and retains insert-only RLS. Rollback tests proved one email can
-join both Just-a-Pinch and Flow State while same-product duplicates stay blocked.
-Shift9 Vercel Production + Preview have the public Supabase URL and publishable
-anon key. The protected branch preview returned 200; a real synthetic signup was
-stored once, duplicate-masked, then deleted with zero test rows remaining.
+The production Supabase waitlist uses unique `(lower(email), source)`, requires a
+nonblank source, and retains insert-only RLS. One email can join both Just-a-Pinch
+and Flow State while same-product duplicates remain blocked. Shift9 Vercel
+Production + Preview have the public Supabase URL and publishable anon key.
 
 **Vercel gotcha:** `vercel env pull` returns an 11-character placeholder for a
 sensitive value. Copying it caused `Invalid supabaseUrl` and preview 500s. For
