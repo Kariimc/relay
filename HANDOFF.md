@@ -2,17 +2,16 @@
 Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-08-01)
-**BRING UP DESK FUTURE-EPISODE HARDENING IS READY IN DRAFT PR #10.**
-`Kariimc/Faceless-Tech-youtube` branch `codex/free-stock-broll` is pushed at
-`52ec2ef`; draft PR: https://github.com/Kariimc/Faceless-Tech-youtube/pull/10.
-It adds fail-safe licensed/decoded Wikimedia stock, pinned three-variant signature
-audio for future episodes, the approved end-screen CTA, upload channel-ID and
-commercial-disclosure gates, and future packaging/retention rules. Episode 001
-and live desk/archive/voice changes stayed outside the commit. Final proof: 325
-tests passed with one protected Episode 001 encoding comparison deselected; Bash
-syntax, Remotion compositions, real mix/corrupt-media checks, and Python + React
-specialist reviews passed. GitHub has no remote checks configured. Main is
-untouched; merging still needs Kariim's fresh approval.
+**BRING UP DESK FUTURE-EPISODE HARDENING LANDED ON MAIN (2026-08-01).**
+`Kariimc/Faceless-Tech-youtube` PR #10 merged into `main` at merge commit
+`9ac6b6ce`, from verified head `52ec2ef`. It adds fail-safe licensed/decoded
+Wikimedia stock, pinned three-variant signature audio for future episodes, the
+approved end-screen CTA, upload channel-ID and commercial-disclosure gates, and
+future packaging/retention rules. Episode 001 and live desk/archive/voice changes
+stayed outside the commit. Final proof: 325 tests passed with one protected
+Episode 001 encoding comparison deselected; Bash syntax, Remotion compositions,
+real mix/corrupt-media checks, and Python + React specialist reviews passed.
+GitHub had no remote checks configured.
 
 **FACELESS YOUTUBE WRITER REPAIR LANDED ON MAIN (2026-08-01).** Kariim gave fresh merge approval and `Kariimc/Faceless-Tech-youtube` PR #9 landed on `main` at merge commit `5ccd2de`. Claude CLI quota/capacity responses now fall back to the signed-in Codex CLI in a read-only sandbox, while auth/unexpected failures remain loud and timeouts are bounded. The public YouTube name is synced to Bring Up Desk / @bringupdesk; X remains Bring-Up / @bringupdesk, and internal shortcut/task/on-video BRING-UP names are unchanged. Future-only title, thumbnail, and first-30-second gates encode the 2.4% CTR and 1:26 average-view-duration feedback; episode 001 stays rebuildable as shipped. Proof: 155 high-risk tests and 249 unaffected tests passed, Python compile clean, independent review approved with zero findings. The local checkout remains on the repaired branch because Kariim's live queue/archive/episode changes are dirty and protected; no branch switch or production-data edit was needed.
 
