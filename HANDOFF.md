@@ -2,6 +2,21 @@
 Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-08-01)
+**SHIFT-9 CONVERSION FOLLOW-UP MERGED AND LIVE (2026-08-01).**
+`shift9-studio/.github` PR #41 merged to `main` at `92b74d3` from verified
+head `a96eb13`. Flow State's beta intake now has the correct public Supabase
+values in Vercel Production and Preview; both the local and newly deployed
+production `/api/waitlist` returned `200 {"ok":true}` for the studio owner
+address. The Flow State header clears its fixed return control, Grid/Icons no
+longer show redundant hover tips, the Light tooltip paints above lower desktop
+controls, Instrument uses client-facing boundary copy, and its repeated
+mid-page `Start a project` button is removed in favor of one final CTA. Focused
+guards, typecheck, full build, live DOM measurements, PR checks, the production
+deployment, and origin/main ancestry all passed. The remote feature branch was
+deleted. The canonical local main checkout could not fast-forward because the
+user-owned untracked `shift9/apps/shift9-dev/public/experience/ASSET-LOG.md`
+would be overwritten; preserve it and reconcile deliberately before pulling.
+
 **SHIFT-9 PRODUCT ROOMS AND STUDIO POLISH LANDED ON MAIN (2026-08-01).**
 `shift9-studio/.github` PR #40 merged into `main` at merge commit `6c7b70e`
 from verified head `dc41377`. `/instrument` is now a client-facing open-lab
