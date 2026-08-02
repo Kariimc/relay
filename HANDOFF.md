@@ -1,7 +1,24 @@
 # HANDOFF — global state (read me first)
 Updated: 2026-08-02 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-08-02)
+## LATEST -- where we left off (2026-08-02, code-local)
+**THE CHIEF OF STAFF IS LIVE, GLOBAL, AND EDIT-LOCKED TO KARIIM — EVERY SURFACE, EVERY SESSION.**
+my-skills master at `f01953a`, CI green, synced live. The `chief-of-staff` agent (model fable) is
+Kariim's standing judge-and-orchestrator: every non-trivial deliverable gets its verdict BEFORE
+reaching him (rule 15 in the global law), all 74 agents carry chain-of-command clause 8 — no
+agent can plead ignorance, disobedience = demotion, rogue act = roster removal. Currently in
+SHADOW MODE (verdicts issued and reported, never blocking) until Kariim flips enforcement by
+ordering creation of `~/.claude/cos/ENFORCE` — that file is guard-locked; no agent may create it.
+CoS duties: intent contracts, AAA-ultra-premium desk rule (live-web best-in-class comparisons,
+producing agent never grades itself), premise mastery, master-level lie detection, system
+auditing with loud `=== CHIEF OF STAFF REPORT ===` banners, staffing ledger, ~10%-of-weekly
+budget ceiling. The email-triage agent formerly named chief-of-staff is now `comms-secretary`.
+**INCIDENT, all surfaces take note:** the hardening commit was reverted 2026-07-31 03:55 by
+`bb2739d` with NO stated reason while its CI was green (the revert itself broke CI). Re-applied
+on Kariim's go. Reverting CoS protections without Kariim's written order is a rogue act under
+rule 15: restore, report loudly, ledger-mark.
+
+## Previous (2026-08-02, codex-local)
 **BRING UP DESK EPISODE 002 IS A VERIFIED PRIVATE DRAFT; RETRY FIX IS IN DRAFT PR #11 (2026-08-02).**
 `Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` at `d134c1e`
 created Episode 002 as a fully dressed private draft on the pinned channel and
