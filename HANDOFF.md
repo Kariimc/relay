@@ -22,6 +22,24 @@ budget ceiling. The email-triage agent formerly named chief-of-staff is now `com
 on Kariim's go. Reverting CoS protections without Kariim's written order is a rogue act under
 rule 15: restore, report loudly, ledger-mark.
 
+## Previous (2026-08-02, code-local)
+**BRING UP DESK EPISODE 002 SCORE AND VISUAL-CADENCE REVISION IS FULLY DRESSED; PR #11 UPDATED (2026-08-02).**
+`Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` is at
+`8cb0a11`. The new private revision replaces the full-length ambient hum with
+three original score movements, deliberate quiet scenes and short editorial
+cues. Four long pans became fourteen cue- and checksum-pinned 5.5-second owned
+concept inserts with three framings each. Studio reports SD and HD complete;
+the saved clickable end screen was reopened and verified with Best for viewer
+upper-right and Bring Up Desk Subscribe lower-right. The 14:23.83 master fully
+decoded at 1920x1080 H.264 / 48 kHz stereo AAC and measured -15.15 LUFS,
+-2.31 dBTP, LRA 2.30. Recovery now duration-checks atomic audio/video partials,
+restores full visual props after audio-only work, and uses exact-file revision
+markers while failing closed on ambiguous older drafts. 360 tests passed with
+one protected Episode 001 encoding comparison deselected; compile, Remotion,
+Bash syntax and independent review passed. Older private drafts remain preserved.
+Draft PR #11 is updated; fresh explicit approval is still required before merging
+to `main`.
+
 ## Previous (2026-08-02, codex-local)
 **BRING UP DESK EPISODE 002 CORRECTED PRIVATE REVISION IS FULLY DRESSED; PR #11 UPDATED (2026-08-02).**
 `Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` at `ae4057d`
