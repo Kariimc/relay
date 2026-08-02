@@ -23,14 +23,17 @@ on Kariim's go. Reverting CoS protections without Kariim's written order is a ro
 rule 15: restore, report loudly, ledger-mark.
 
 ## Previous (2026-08-02, codex-local)
-**BRING UP DESK EPISODE 002 IS A VERIFIED PRIVATE DRAFT; RETRY FIX IS IN DRAFT PR #11 (2026-08-02).**
-`Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` at `d134c1e`
-created Episode 002 as a fully dressed private draft on the pinned channel and
-made recovery duplicate-safe. A live retry resumed the same draft, skipped the
-existing playlist entry, refreshed the thumbnail, and updated the English
-captions. The final 1920x1080 H.264/AAC video passed a full strict decode; 336
-tests passed with one protected Windows encoding comparison deselected, and
-independent review found no actionable issues. PR #11 is draft and mergeable;
+**BRING UP DESK EPISODE 002 CORRECTED PRIVATE REVISION IS FULLY DRESSED; PR #11 UPDATED (2026-08-02).**
+`Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` at `ae4057d`
+now adds four original labelled eight-second motion clips, owned ambient/signature/
+outro audio, safe loudness mastering, and the saved clickable Best for viewer plus
+Bring Up Desk Subscribe end screen. The corrected private revision completed SD
+and HD processing; the earlier private draft is preserved pending explicit delete
+approval. Recovery now uses full input fingerprints, first-real-hole resume and a
+separate in-progress cache marker; generated paths and hashes fail closed. The
+14:23.83 H.264/AAC master fully decoded and measured -14.81 LUFS / -1.18 dBTP;
+355 tests passed with one protected Episode 001 encoding comparison deselected,
+and independent re-review found no actionable issues. PR #11 is draft and clean;
 a fresh explicit approval is still required before merging to `main`.
 
 **FLOW STATE CONFIRMATION EMAIL MERGED AND LIVE (2026-08-02).**
