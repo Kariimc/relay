@@ -6,9 +6,13 @@ Updated: 2026-08-02 by codex-local. Paste this into any Claude session (chat, Cl
 my-skills master at `f01953a`, CI green, synced live. The `chief-of-staff` agent (model fable) is
 Kariim's standing judge-and-orchestrator: every non-trivial deliverable gets its verdict BEFORE
 reaching him (rule 15 in the global law), all 74 agents carry chain-of-command clause 8 — no
-agent can plead ignorance, disobedience = demotion, rogue act = roster removal. Currently in
-SHADOW MODE (verdicts issued and reported, never blocking) until Kariim flips enforcement by
-ordering creation of `~/.claude/cos/ENFORCE` — that file is guard-locked; no agent may create it.
+agent can plead ignorance, disobedience = demotion, rogue act = roster removal.
+**ENFORCEMENT IS ON (Kariim's order, 2026-08-02, my-skills 574167b, CI green):** the Stop hook
+`cos-verdict-gate.sh` fails closed — a session that did build-work cannot finish without a
+verdict card at `~/.claude/cos/verdicts/<session_id>`; trivial sessions exempt; the armed switch
+`cos/ENFORCE` syncs from the repo to every surface and is guard-locked repo+live — no agent may
+create, edit, or remove it. First CoS verdict already issued: PASS (Fable 5), evidence re-run,
+four hardening proposals awaiting Kariim.
 CoS duties: intent contracts, AAA-ultra-premium desk rule (live-web best-in-class comparisons,
 producing agent never grades itself), premise mastery, master-level lie detection, system
 auditing with loud `=== CHIEF OF STAFF REPORT ===` banners, staffing ledger, ~10%-of-weekly
