@@ -2,6 +2,18 @@
 Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
 ## LATEST -- where we left off (2026-08-01)
+**FLOW STATE CONFIRMATION EMAIL MERGED AND LIVE (2026-08-02).**
+`shift9-studio/.github` PR #42 merged to `main` at `a3c10a9` from verified head
+`04918f5`. Production `/api/waitlist` returned
+`200 {"ok":true,"confirmation":"sent"}` for `shift9dev@gmail.com` after the
+Vercel deployment completed. Resend had already recorded the protected-preview
+message as delivered; the deterministic 24-hour key prevented the production
+check from sending a duplicate. The dedicated sending-only key remains restricted
+to verified `shift9.dev`; the Supabase Auth key was untouched. Supabase Table
+Editor `waitlist` filtered to `source = flow-state` is the private signup view,
+and Resend Emails is the delivery/bounce view. Remote feature branch deleted;
+origin/main ancestry verified.
+
 **FLOW STATE CONFIRMATION EMAIL IS VERIFIED, PR #42 NOT MERGED (2026-08-02).**
 `shift9-studio/.github` ready PR #42 at head `04918f5` adds a Resend
 confirmation after the insert-only waitlist accepts or duplicate-masks an
