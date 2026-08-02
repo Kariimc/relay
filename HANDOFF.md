@@ -1,7 +1,17 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-08-01 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-08-02 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
-## LATEST -- where we left off (2026-08-01)
+## LATEST -- where we left off (2026-08-02)
+**BRING UP DESK EPISODE 002 IS A VERIFIED PRIVATE DRAFT; RETRY FIX IS IN DRAFT PR #11 (2026-08-02).**
+`Kariimc/Faceless-Tech-youtube` branch `codex/episode-2-resume` at `d134c1e`
+created Episode 002 as a fully dressed private draft on the pinned channel and
+made recovery duplicate-safe. A live retry resumed the same draft, skipped the
+existing playlist entry, refreshed the thumbnail, and updated the English
+captions. The final 1920x1080 H.264/AAC video passed a full strict decode; 336
+tests passed with one protected Windows encoding comparison deselected, and
+independent review found no actionable issues. PR #11 is draft and mergeable;
+a fresh explicit approval is still required before merging to `main`.
+
 **FLOW STATE CONFIRMATION EMAIL MERGED AND LIVE (2026-08-02).**
 `shift9-studio/.github` PR #42 merged to `main` at `a3c10a9` from verified head
 `04918f5`. Production `/api/waitlist` returned
