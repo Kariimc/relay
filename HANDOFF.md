@@ -1,5 +1,19 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-08-02 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-08-03 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+
+## LATEST -- where we left off (2026-08-03, codex-local)
+**BRING UP DESK PROVENANCE + WEEKLY INTELLIGENCE IS READY IN DRAFT PR #12.**
+`Kariimc/Faceless-Tech-youtube` branch `codex/provenance-refetch` at `1940737`
+adds exact Commons provenance repair/redownload with generated fallback, full
+render/MP4/script attestation before private upload, and a host-file-isolated
+weekly trend/compliance researcher. YouTube Studio Audio Library is approved for
+future music/SFX only with saved metadata/hash and exact attribution when required.
+Final proof: 430 tests green with only the protected Episode 001 locale fixture
+excluded; the exact isolated scheduled command passed live; code, Python, and
+security reviews approved. Episode 001/002, live YouTube, and scheduler state
+were untouched. Draft PR #12 is merge-clean with no CI configured. Fresh approval
+is required before merging to main; only after merge should the Sunday 7pm task
+be installed from clean stable main.
 
 ## LATEST -- where we left off (2026-08-02, code-local)
 **THE CHIEF OF STAFF IS LIVE, GLOBAL, AND EDIT-LOCKED TO KARIIM — EVERY SURFACE, EVERY SESSION.**
