@@ -1,5 +1,30 @@
 # HANDOFF — global state (read me first)
-Updated: 2026-08-03 by codex-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+Updated: 2026-08-03 by code-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
+
+## LATEST -- where we left off (2026-08-03, code-local)
+**VESPERS PHASE 1 IS BUILT, MEASURED AND PUSHED.**
+New repo `Kariimc/vespers` (private, main @ 63e2e7f), local at `C:\Users\Kariim\Dev\vespers`.
+The gothic horde-survival roguelite now has a playable core loop in Godot 4.7: the Warden with
+his 8-frame walk and a foot-pivoted rigged scythe swing, three enemy kinds swarming, soul XP
+gems with magnetism, queued level-ups with a three-card choice, two auto-firing weapons
+(Scythe + Vigil Bell), and an endless seamless graveyard.
+MEASURED, not claimed: 820 enemies alive at once, 155 fps average / 111 fps 1st-percentile on
+Intel Iris Xe integrated graphics -- roughly 2x the 60fps phase gate. The packaged build was
+run standalone from a folder outside the repo and wrote its own report (141 fps avg, 816
+enemies). Evidence in `vespers/proof/`: bench.json, five screenshots, and an 11-second
+real-time clip with the live fps counter in shot.
+Hundreds-on-screen is structural, not an optimisation pass: MultiMesh over flat packed arrays
+with a zero-allocation linked-list separation grid; the only real nodes in a fight are the
+player, the camera and the UI.
+Godot MCP Pro addon is vendored into the project and enabled in project settings.
+TWO DECISIONS WAITING ON KARIIM: (1) export templates are not installed, so the Windows
+package is the game's .pck paired with the Godot 4.7 runtime -- works standalone but ships a
+178MB binary; a proper export needs a ~1.5GB download and his yes. (2) the no-mirroring rule
+leaves the hellhound facing right whichever way it runs -- leave it, author a variant in
+Phase 4, or grant a narrow exception for non-humanoids.
+The old asset folder `Dev\Untitled Vampire Survivors like-assets` is now RAW SOURCE ONLY; its
+PROGRESS.md points at the new repo. Next is Phase 2: 8 weapons + evolutions, juice, the Sexton
+boss, results flow.
 
 ## LATEST -- where we left off (2026-08-03, codex-local)
 **BRING UP DESK PROVENANCE + WEEKLY INTELLIGENCE IS READY IN DRAFT PR #12.**
