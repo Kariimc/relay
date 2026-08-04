@@ -69,4 +69,5 @@
 2026-07-08 | code-local | Flagship pivot (sell neon-forge, $50k target); token rotated; brain + ~/.claude backed up (GitHub + XAVIER-BAK thumbdrive); XAVIER debrief hardened (detached-HEAD guard + git lock + UTF-8 logs); merged PR #2 (roadmap status queue); handoffs updated in xavier PROGRESS.md + brain user-primer.
 2026-07-06 | code | Relay repo created; work from chat session landed
 
+- 2026-08-03 code-local -- VESPERS phases 1 and 2 shipped and phase 3 started: weapons, boss, results, solid bodies, dash, cinematic death screen, drawn animation for the Warden, Sin/Grace and Vows. All pushed to Kariimc/vespers.
 - 2026-08-03 code-local -- VESPERS Phase 1 shipped: new private repo Kariimc/vespers, playable core loop in Godot 4.7, measured 820 enemies at 155fps avg / 111fps p1, packaged Windows build verified standalone. Two decisions pending: export templates (~1.5GB download) and enemy facing under the no-mirroring rule.

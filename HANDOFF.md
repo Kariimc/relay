@@ -1,6 +1,39 @@
 # HANDOFF — global state (read me first)
 Updated: 2026-08-03 by code-local. Paste this into any Claude session (chat, Claude Code, Cowork) and it has full context. Read the LATEST block first; sections 2-6 below are older context, corrected by LATEST where they conflict.
 
+## LATEST -- where we left off (2026-08-03 late, code-local)
+**VESPERS IS THROUGH PHASE 2 AND PHASE 3 HAS STARTED.** Repo `Kariimc/vespers` (private,
+main @ 2484400), local `C:\Users\Kariim\Dev\vespers`. Read its PROGRESS.md and
+HANDOFF.md -- they are complete and current; this is only the pointer.
+
+DONE THIS SESSION, all measured and pushed:
+- Phase 1: playable core loop, 900+ enemies, shipped Windows build (real export, the
+  4.7 templates are installed now).
+- Phase 2: eight weapons with evolutions, damage numbers, hit-stop, knockback, the
+  Sexton with telegraphed grave-bursts, and a results flow.
+- Solid bodies: the horde pushes back two-way, the boss blocks, and the stone
+  furniture drawn into the floor blocks both you and the horde (nine measured circles;
+  reading collision out of the floor image is a proven dead road, twice).
+- Death feedback: corpses collapse and burst into bone dust; the bell's ring damage
+  was a real bug (scaled by frame time, worth ~1 damage a toll) and is fixed.
+- A cinematic death screen built from four newly generated painted pieces, with
+  tallying numbers and unlock announcements; six unlocks persist between runs and
+  three of them change the next run for real.
+- A dash (invulnerable, passes through bodies but never stone or the boss).
+- The Warden is drawn frame by frame now: a 16-frame walk and a 25-frame reap, both
+  generated as one grid sheet each and sliced. His damage lands on the contact frame.
+- Soul Harvest: scythe kills tear the soul loose, heal a sliver, stack a decaying
+  damage bonus.
+- Phase 3 started: Sin and Grace with shrines you kneel at, and Vows sworn before the
+  run on a painted pre-run screen.
+
+STATE: 36+ self-test checks pass (`-- selftest`). Shipped build measures ~180 fps
+average, ~110 at the 1st percentile, with 900 enemies on an Intel Iris Xe laptop.
+
+NEXT: finish Phase 3 -- equipment and fusion, and the four other playable characters.
+Also still open: walk and death sheets for the three enemies and an attack sheet for
+the Sexton, by the same grid-sheet route the Warden's frames came from.
+
 ## LATEST -- where we left off (2026-08-03, code-local)
 **VESPERS PHASE 1 IS BUILT, MEASURED AND PUSHED.**
 New repo `Kariimc/vespers` (private, main @ 63e2e7f), local at `C:\Users\Kariim\Dev\vespers`.
