@@ -73,7 +73,33 @@ were untouched. Draft PR #12 is merge-clean with no CI configured. Fresh approva
 is required before merging to main; only after merge should the Sunday 7pm task
 be installed from clean stable main.
 
-## LATEST -- where we left off (2026-08-02, code-local)
+## LATEST -- where we left off (2026-08-04, code-local)
+**KARIIM'S COMPLETE VISION LIVES IN ONE FILE: `shift9-control-plane` branch `claude/v1`,
+`BRIEF.md`. Read it before touching anything SHIFT-9.** It is the certified-comprehensive
+charter — war room + software factory + fresh start — carrying EVERY order he has given:
+pages and card system (art style locked: 90s anime/manga × Jim Lee X-Men/extreme Marvel ×
+Bleach × Casshern, Black American squad cast, canvas effects engine, WOW factor), acclaim bar
+(the plane itself must be worldwide-featurable), speed law (fast on no-GPU machines), factory
+laws (agent-proposes-code-disposes, spec-driven, post-execution gates, deterministic codebase,
+never-blind research, never-publish-to-test + real-form sandbox, additive-only), model gateway
+(OpenRouter feature parity, local and free, seating ALL his subscriptions as orchestra seats),
+key locker (keys never in chat/repos — OS vault + keymaster agent to Bitwarden), the
+compressor (distilled twins so a 30MB window carries hundreds of MB of references), rankings
+swim lanes + his manual promote/demote/remove, Direct Line chat console, containers (control
+plane + hot-reload live test bed, zero flashes), any-OS/VS Code, menu names from his interview
+(Missions/Arsenal/Playbook/Fuel + plain subtitles), delivery format (ETA + deliverable +
+simple words, never plumbing), CoS as shield/scout/teacher (flip-card visual lessons), Supreme
+Leader + morale clause, lesser-model build handoff under CoS oversight once the charter is
+certified 100%-buildable, taste library seeded by shift9.dev + Awwwards winners with one-click
+element lift, and Phase C fresh start (impeccable-only skill start, plain-speech+token-thrift
+rule #1) firing ONLY on his word "decommission".
+**Also: `video-producer` agent (75th) is live** — @bringupdesk executive producer, drafts-only,
+commands the Faceless-Tech-youtube pipeline, Open Desk hardware shorts, asset-gap prompt lists.
+**Correction:** the 07-31 revert of CoS hardening is RESOLVED as a legitimate codex-local
+coordination call on Kariim's then-instruction (see relay log 2026-07-31); the re-application
+stands under his later explicit orders. No rogue actor existed.
+
+## Previous (2026-08-02, code-local)
 **THE CHIEF OF STAFF IS LIVE, GLOBAL, AND EDIT-LOCKED TO KARIIM — EVERY SURFACE, EVERY SESSION.**
 my-skills master at `f01953a`, CI green, synced live. The `chief-of-staff` agent (model fable) is
 Kariim's standing judge-and-orchestrator: every non-trivial deliverable gets its verdict BEFORE
